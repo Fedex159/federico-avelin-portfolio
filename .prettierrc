@@ -1,3 +1,8 @@
 {
-  "lineWidth": 80
+  "lineWidth": 80,
+  "plugins": [
+    "prettier-plugin-tailwindcss",
+    "prettier-plugin-tailwind-styled-components"
+  ],
+  "tailwindFunctions": ["tw"]
 }
