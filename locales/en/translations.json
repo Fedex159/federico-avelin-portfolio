@@ -1,0 +1,18 @@
+{
+  "header": {
+    "navlinks": {
+      "home": "Home",
+      "about": "About",
+      "technologies": "Technologies",
+      "projects": "Projects",
+      "contact": "Contact"
+    }
+  },
+  "home": {
+    "intro": "Hi There 👋 I'm",
+    "title": "Federico Avelin",
+    "subtitle": "Fullstack Web Developer",
+    "description": "Excellent predisposition for teamwork, maintaining the ability to develop projects that are scalable and modular. I ❤️ React and Express.",
+    "hireMe": "Hire Me"
+  }
+}
