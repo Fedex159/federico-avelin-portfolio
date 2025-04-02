@@ -1,6 +1,5 @@
 import { logo } from "@/public/assets";
-import { HamburgerCheckbox } from "@/shared/components/HamburgerCheckbox";
-import { LanguageSelector } from "@/shared/components/LanguageSelector";
+import { HamburgerCheckbox, LanguageSelector } from "@/shared/components";
 import { Translations } from "@/shared/types/translations";
 import { useTranslations } from "next-intl";
 import Image from "next/image";

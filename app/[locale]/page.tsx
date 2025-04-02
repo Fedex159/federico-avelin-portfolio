@@ -1,6 +1,4 @@
-import { About } from "@/shared/sections/About";
-import { Header } from "@/shared/sections/Header";
-import { Home } from "@/shared/sections/Home";
+import { About, Header, Home } from "@/shared/sections";
 import { setRequestLocale } from "next-intl/server";
 import { StyledMain } from "./page.styles";
 
