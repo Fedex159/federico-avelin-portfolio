@@ -43,7 +43,7 @@ export default async function RootLayout({ children, params }: Props) {
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
+    <html lang={locale} className="scroll-smooth">
       <body
         className={`${montserrat.className} min-h-dvh bg-(--main-background)`}
       >
