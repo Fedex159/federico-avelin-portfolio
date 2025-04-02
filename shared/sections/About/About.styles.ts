@@ -8,7 +8,7 @@ export const StyledContainer = tw.section`
   items-center
   gap-y-10
   bg-(--secondary-background)
-  px-[calc((100%_-_var(--container-7xl))_/_2)]
+  px-(--padding-inline)
   py-8
   *:col-start-2
   *:col-end-2
@@ -20,13 +20,13 @@ export const StyledContainer = tw.section`
 
 export const aboutImageClassname = clsx`
   mx-auto
-  mt-2.5
   h-96
   w-80
   object-cover
   shadow-[-5px_-5px_var(--main-background),-13px_-13px_0px_-2px_var(--color-primary)]
   md:col-start-1
   md:col-end-1
+  md:mt-2.5
   lg:scale-150
 `;
 

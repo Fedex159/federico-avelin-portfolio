@@ -1,15 +1,13 @@
 import tw, { clsx } from "@/shared/utils/tailwind";
 
 export const StyledContainer = tw.section`
-  mx-auto
   flex
-  min-h-[calc(100dvh-var(--spacing)*20)]
-  max-w-7xl
+  min-h-[calc(100dvh_-_var(--header-height))]
   flex-col
   items-center
   justify-center
   gap-5
-  px-2.5
+  px-(--padding-inline)
   py-8
   md:flex-row-reverse
   md:justify-between

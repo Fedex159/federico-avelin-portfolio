@@ -5,5 +5,15 @@
   --secondary-background: #262626;
   --header-background: #212121b3;
   --color-primary: #f6f200;
+
   --box-shadow-button: 0px 0px 5px 2px var(--color-primary);
+
+  --header-height: var(--spacing) * 20;
+  --max-content-width: calc((100% - var(--container-7xl)) / 2);
+  --min-padding-inline: calc(var(--spacing) * 2.5);
+  --padding-inline: clamp(
+    var(--min-padding-inline),
+    var(--max-content-width),
+    var(--max-content-width)
+  );
 }

@@ -5,11 +5,11 @@ export const StyledHeader = tw.header`
   top-0
   mx-auto
   flex
-  h-20
+  h-(--header-height)
   w-full
   items-center
   bg-(--header-background)
-  px-[calc((100%_-_var(--container-7xl))_/_2)]
+  px-(--padding-inline)
   text-white
 `;
 
@@ -45,7 +45,6 @@ export const StyledNav = tw.nav`
   justify-start
   gap-2.5
   bg-(--header-background)
-  px-2.5
   transition-[translate]
   duration-300
   peer-checked:translate-x-0
