@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+@theme {
+  --main-background: #212121;
+  --color-primary: #f6f200;
+  --box-shadow-button: 0px 0px 5px 2px var(--color-primary);
+}

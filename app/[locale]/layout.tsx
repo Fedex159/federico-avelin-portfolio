@@ -4,6 +4,15 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import "./globals.css";
+import { Montserrat } from "next/font/google";
+
+const montserrat = Montserrat({
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  display: "swap",
+  fallback: ["sans-serif"],
+});
 
 export const metadata: Metadata = {
   title: "Federico Avelin | FullStack Web Developer",
@@ -35,7 +44,7 @@ export default async function RootLayout({ children, params }: Props) {
 
   return (
     <html lang={locale}>
-      <body>
+      <body className={`${montserrat.className} h-dvh bg-(--main-background)`}>
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
