@@ -2,6 +2,7 @@
 
 @theme {
   --main-background: #212121;
+  --secondary-background: #262626;
   --header-background: #212121b3;
   --color-primary: #f6f200;
   --box-shadow-button: 0px 0px 5px 2px var(--color-primary);
