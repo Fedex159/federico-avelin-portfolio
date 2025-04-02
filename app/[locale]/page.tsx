@@ -1,3 +1,4 @@
+import { About } from "@/shared/sections/About";
 import { Header } from "@/shared/sections/Header";
 import { Home } from "@/shared/sections/Home";
 import { setRequestLocale } from "next-intl/server";
@@ -17,6 +18,7 @@ export default async function Page({ params }: Props) {
       <Header />
       <StyledMain>
         <Home />
+        <About />
       </StyledMain>
     </>
   );

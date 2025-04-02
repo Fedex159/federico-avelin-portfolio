@@ -14,5 +14,10 @@
     "subtitle": "Desarrollador Web Fullstack",
     "description": "Excelente predisposición para el trabajo en equipo, manteniendo la capacidad de desarrollar proyectos que sean escalables y modulables. Me ❤️ React y Express.",
     "hireMe": "Contrátame"
+  },
+  "about": {
+    "title": "Sobre mi",
+    "description": "Soy Federico Avelin, desarrollador FullStack. Me apasiona aprovechar mis diversos antecedentes para descifrar problemas desafiantes y crear experiencias agradables. Perfecciono mis habilidades todos los días, para mantenerme actualizado y seguir avanzando en mi carrera como desarrollador.\n\n Desarrollo sitios web con HTML, CSS y JavaScript. Para el front, me encanta usar React junto con Redux, y para el back Express junto con postgresql y Sequelize.\n\n Siempre trabajo para lograr el mejor resultado en cada proyecto que tengo en mis manos, conmigo encontrarás a alguien que no se rendirá fácilmente.",
+    "downloadCv": "Descargar CV"
   }
 }
