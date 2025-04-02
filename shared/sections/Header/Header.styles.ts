@@ -1,14 +1,15 @@
 import tw, { clsx } from "@/shared/utils/tailwind";
 
 export const StyledHeader = tw.header`
-  relative
+  sticky
+  top-0
   mx-auto
   flex
   h-20
-  max-w-7xl
+  w-full
   items-center
   bg-(--header-background)
-  p-2.5
+  px-[calc((100%_-_var(--container-7xl))_/_2)]
   text-white
 `;
 
@@ -44,6 +45,7 @@ export const StyledNav = tw.nav`
   justify-start
   gap-2.5
   bg-(--header-background)
+  px-2.5
   transition-[translate]
   duration-300
   peer-checked:translate-x-0

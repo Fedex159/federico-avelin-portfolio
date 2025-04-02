@@ -44,7 +44,9 @@ export default async function RootLayout({ children, params }: Props) {
 
   return (
     <html lang={locale}>
-      <body className={`${montserrat.className} h-dvh bg-(--main-background)`}>
+      <body
+        className={`${montserrat.className} min-h-dvh bg-(--main-background)`}
+      >
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
