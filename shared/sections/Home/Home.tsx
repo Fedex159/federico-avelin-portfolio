@@ -1,4 +1,5 @@
 import { profileImage } from "@/public/assets";
+import { mixinButton } from "@/shared/styles/mixins";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import {
@@ -6,7 +7,6 @@ import {
   StyledContainer,
   StyledContent,
   StyledDescription,
-  StyledHireButton,
   StyledIntro,
   StyledSubtitle,
   StyledTitle,
@@ -27,7 +27,7 @@ export const Home = () => {
         <StyledTitle>{t("title")}</StyledTitle>
         <StyledSubtitle>{t("subtitle")}</StyledSubtitle>
         <StyledDescription>{t("description")}</StyledDescription>
-        <StyledHireButton>{t("hireMe")}</StyledHireButton>
+        <button className={mixinButton}>{t("hireMe")}</button>
       </StyledContent>
     </StyledContainer>
   );

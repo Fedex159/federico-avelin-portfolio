@@ -3,9 +3,9 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import {
   aboutImageClassname,
+  classNameDownloadButton,
   StyledContainer,
   StyledDescription,
-  StyledDownloadButton,
   StyledTitle,
 } from "./About.styles";
 
@@ -21,7 +21,7 @@ export const About = () => {
       />
       <StyledTitle>{t("title")}</StyledTitle>
       <StyledDescription>{t("description")}</StyledDescription>
-      <StyledDownloadButton>{t("downloadCv")}</StyledDownloadButton>
+      <button className={classNameDownloadButton}>{t("downloadCv")}</button>
     </StyledContainer>
   );
 };

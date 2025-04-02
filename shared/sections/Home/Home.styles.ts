@@ -53,14 +53,3 @@ export const StyledSubtitle = tw.h2`
 export const StyledDescription = tw.p`
   max-w-xl
 `;
-
-export const StyledHireButton = tw.button`
-  w-52
-  cursor-pointer
-  rounded-2xl
-  bg-(--color-primary)
-  p-3
-  font-bold
-  text-black
-  hover:shadow-(--box-shadow-button)
-`;

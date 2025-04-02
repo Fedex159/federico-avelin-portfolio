@@ -1,3 +1,4 @@
+import { mixinButton } from "@/shared/styles/mixins";
 import tw, { clsx } from "@/shared/utils/tailwind";
 
 export const StyledContainer = tw.section`
@@ -41,15 +42,7 @@ export const StyledDescription = tw.p`
   md:my-24
 `;
 
-export const StyledDownloadButton = tw.button`
-  w-52
-  max-w-52
-  cursor-pointer
-  rounded-2xl
-  bg-(--color-primary)
-  p-3
-  font-bold
-  text-black
-  hover:shadow-(--box-shadow-button)
+export const classNameDownloadButton = clsx`
+  ${mixinButton}
   md:mt-auto
 `;
