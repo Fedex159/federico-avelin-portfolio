@@ -12,16 +12,19 @@ import {
   StyledNav,
 } from "./Header.styles";
 
-const NAV_LINKS: Array<{ href: string; translationKey: Translations }> = [
-  { href: "#home", translationKey: "header.navlinks.home" },
-  { href: "#about", translationKey: "header.navlinks.about" },
-  { href: "#technologies", translationKey: "header.navlinks.technologies" },
-  { href: "#projects", translationKey: "header.navlinks.projects" },
-  { href: "#contact", translationKey: "header.navlinks.contact" },
+const NAV_LINKS: Array<{
+  href: string;
+  translationKey: Translations<"header">;
+}> = [
+  { href: "#home", translationKey: "navlinks.home" },
+  { href: "#about", translationKey: "navlinks.about" },
+  { href: "#technologies", translationKey: "navlinks.technologies" },
+  { href: "#projects", translationKey: "navlinks.projects" },
+  { href: "#contact", translationKey: "navlinks.contact" },
 ];
 
 export const Header = () => {
-  const t = useTranslations();
+  const t = useTranslations("header");
 
   return (
     <StyledHeader>

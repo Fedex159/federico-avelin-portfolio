@@ -13,7 +13,7 @@ import {
 } from "./Home.styles";
 
 export const Home = () => {
-  const t = useTranslations();
+  const t = useTranslations("home");
 
   return (
     <StyledContainer id="home">
@@ -23,11 +23,11 @@ export const Home = () => {
         alt="profile-user-image"
       />
       <StyledContent>
-        <StyledIntro>{t("home.intro")}</StyledIntro>
-        <StyledTitle>{t("home.title")}</StyledTitle>
-        <StyledSubtitle>{t("home.subtitle")}</StyledSubtitle>
-        <StyledDescription>{t("home.description")}</StyledDescription>
-        <StyledHireButton>{t("home.hireMe")}</StyledHireButton>
+        <StyledIntro>{t("intro")}</StyledIntro>
+        <StyledTitle>{t("title")}</StyledTitle>
+        <StyledSubtitle>{t("subtitle")}</StyledSubtitle>
+        <StyledDescription>{t("description")}</StyledDescription>
+        <StyledHireButton>{t("hireMe")}</StyledHireButton>
       </StyledContent>
     </StyledContainer>
   );
