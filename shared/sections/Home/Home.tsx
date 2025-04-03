@@ -1,10 +1,11 @@
 import { profileImage } from "@/public/assets";
+import { CommonSection } from "@/shared/components";
 import { mixinButton } from "@/shared/styles/mixins";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import {
+  homeSectionClassname,
   imageClassname,
-  StyledContainer,
   StyledContent,
   StyledDescription,
   StyledIntro,
@@ -16,7 +17,7 @@ export const Home = () => {
   const t = useTranslations("home");
 
   return (
-    <StyledContainer id="home">
+    <CommonSection className={homeSectionClassname} id="home">
       <Image
         className={imageClassname}
         src={profileImage}
@@ -29,6 +30,6 @@ export const Home = () => {
         <StyledDescription>{t("description")}</StyledDescription>
         <button className={mixinButton}>{t("hireMe")}</button>
       </StyledContent>
-    </StyledContainer>
+    </CommonSection>
   );
 };

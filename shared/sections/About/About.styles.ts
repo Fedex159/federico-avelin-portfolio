@@ -1,15 +1,12 @@
 import { mixinButton } from "@/shared/styles/mixins";
 import tw, { clsx } from "@/shared/utils/tailwind";
 
-export const StyledContainer = tw.section`
+export const aboutSectionClassname = clsx`
   grid
-  min-h-dvh
   grid-cols-[1fr_auto_1fr]
   items-center
   gap-y-10
   bg-(--secondary-background)
-  px-(--padding-inline)
-  py-8
   *:col-start-2
   *:col-end-2
   md:grid-cols-2
