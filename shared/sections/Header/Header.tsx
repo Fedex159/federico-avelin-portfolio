@@ -1,25 +1,43 @@
 import { logo } from "@/public/assets";
 import { HamburgerCheckbox, LanguageSelector } from "@/shared/components";
+import { SectionIdEnum } from "@/shared/types/common";
 import { Translations } from "@/shared/types/translations";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import {
-  navLinkClassname,
+  getNavLinkClassname,
   StyledHamburgerMenu,
   StyledHeader,
   StyledNav,
 } from "./Header.styles";
 
-const NAV_LINKS: Array<{
-  href: string;
+type NavLinks = Array<{
+  sectionId: SectionIdEnum;
   translationKey: Translations<"header">;
-}> = [
-  { href: "#home", translationKey: "navlinks.home" },
-  { href: "#about", translationKey: "navlinks.about" },
-  { href: "#technologies", translationKey: "navlinks.technologies" },
-  { href: "#projects", translationKey: "navlinks.projects" },
-  { href: "#contact", translationKey: "navlinks.contact" },
+}>;
+
+const NAV_LINKS: NavLinks = [
+  {
+    sectionId: SectionIdEnum.HOME,
+    translationKey: "navlinks.home",
+  },
+  {
+    sectionId: SectionIdEnum.ABOUT,
+    translationKey: "navlinks.about",
+  },
+  {
+    sectionId: SectionIdEnum.TECHNOLOGIES,
+    translationKey: "navlinks.technologies",
+  },
+  {
+    sectionId: SectionIdEnum.PROJECTS,
+    translationKey: "navlinks.projects",
+  },
+  {
+    sectionId: SectionIdEnum.CONTACT,
+    translationKey: "navlinks.contact",
+  },
 ];
 
 export const Header = () => {
@@ -27,16 +45,16 @@ export const Header = () => {
 
   return (
     <StyledHeader>
-      <Link href={NAV_LINKS[0].href}>
+      <Link href={NAV_LINKS[0].sectionId}>
         <Image src={logo} alt="logo" />
       </Link>
       <StyledHamburgerMenu htmlFor="hamburger-menu" />
       <HamburgerCheckbox id="hamburger-menu" />
       <StyledNav>
-        {NAV_LINKS.map(({ href, translationKey }, index) => (
+        {NAV_LINKS.map(({ sectionId, translationKey }, index) => (
           <Link
-            className={navLinkClassname}
-            href={href}
+            className={getNavLinkClassname(sectionId)}
+            href={`#${sectionId}`}
             key={`${translationKey}-${index.toString()}`}
           >
             {t(translationKey)}

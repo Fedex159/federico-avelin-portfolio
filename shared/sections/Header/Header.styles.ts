@@ -1,3 +1,4 @@
+import { SectionIdEnum } from "@/shared/types/common";
 import tw, { clsx } from "@/shared/utils/tailwind";
 
 export const StyledHeader = tw.header`
@@ -58,7 +59,24 @@ export const StyledNav = tw.nav`
   md:bg-transparent
 `;
 
-export const navLinkClassname = clsx`
+const activeSectionClasses: Record<SectionIdEnum, string> = {
+  [SectionIdEnum.HOME]:
+    "group-[[data-active-section=home]]:text-primary group-[[data-active-section=home]]:font-bold",
+  [SectionIdEnum.ABOUT]:
+    "group-[[data-active-section=about]]:text-primary group-[[data-active-section=about]]:font-bold",
+  [SectionIdEnum.TECHNOLOGIES]:
+    "group-[[data-active-section=technologies]]:text-primary group-[[data-active-section=technologies]]:font-bold",
+  [SectionIdEnum.PROJECTS]:
+    "group-[[data-active-section=projects]]:text-primary group-[[data-active-section=projects]]:font-bold",
+  [SectionIdEnum.CONTACT]:
+    "group-[[data-active-section=contact]]:text-primary group-[[data-active-section=contact]]:font-bold",
+};
+
+export const getNavLinkClassname = (sectionId: SectionIdEnum) => {
+  const activeSectionClass = activeSectionClasses[sectionId];
+
+  return clsx`
+  ${activeSectionClass}
   after:block
   after:h-0.5
   after:w-0
@@ -67,3 +85,4 @@ export const navLinkClassname = clsx`
   after:duration-300
   hover:after:w-full
 `;
+};
