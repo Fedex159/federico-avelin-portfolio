@@ -45,8 +45,8 @@ export const Header = () => {
 
   return (
     <StyledHeader>
-      <Link href={NAV_LINKS[0].sectionId}>
-        <Image src={logo} alt="logo" />
+      <Link href={`#${NAV_LINKS[0].sectionId}`}>
+        <Image src={logo} alt="logo" width={87} />
       </Link>
       <StyledHamburgerMenu htmlFor="hamburger-menu" />
       <HamburgerCheckbox id="hamburger-menu" />
