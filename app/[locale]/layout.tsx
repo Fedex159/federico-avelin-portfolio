@@ -2,9 +2,10 @@ import { routing } from "@/i18n/routing";
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
-import { notFound } from "next/navigation";
-import "./globals.css";
 import { Montserrat } from "next/font/google";
+import { notFound } from "next/navigation";
+import "@/shared/styles/globals.css";
+import { StyledBody } from "./layout.styles";
 
 const montserrat = Montserrat({
   weight: ["400", "700"],
@@ -44,13 +45,11 @@ export default async function RootLayout({ children, params }: Props) {
 
   return (
     <html lang={locale} className="scroll-smooth">
-      <body
-        className={`${montserrat.className} min-h-dvh bg-(--main-background)`}
-      >
+      <StyledBody className={montserrat.className}>
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
-      </body>
+      </StyledBody>
     </html>
   );
 }
