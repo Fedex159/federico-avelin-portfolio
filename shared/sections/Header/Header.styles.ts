@@ -4,6 +4,7 @@ import tw, { clsx } from "@/shared/utils/tailwind";
 export const StyledHeader = tw.header`
   sticky
   top-0
+  z-10
   mx-auto
   flex
   h-(--header-height)
