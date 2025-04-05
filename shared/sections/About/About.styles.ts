@@ -6,7 +6,6 @@ export const aboutSectionClassname = clsx`
   grid-cols-[1fr_auto_1fr]
   items-center
   gap-y-10
-  bg-(--secondary-background)
   *:col-start-2
   *:col-end-2
   md:grid-cols-2
@@ -25,12 +24,6 @@ export const aboutImageClassname = clsx`
   md:col-end-1
   md:mt-2.5
   lg:scale-150
-`;
-
-export const StyledTitle = tw.h3`
-  text-2xl
-  font-bold
-  md:mb-auto
 `;
 
 export const StyledDescription = tw.p`
