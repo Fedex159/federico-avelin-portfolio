@@ -2,9 +2,13 @@ import IconCss from "./iconCSS.svg";
 import IconDocker from "./iconDocker.svg";
 import IconExpress from "./iconExpress.svg";
 import IconGit from "./iconGit.svg";
+import IconGithub from "./iconGithub.svg";
+import IconGmail from "./iconGmail.svg";
 import IconHTML from "./iconHTML.svg";
 import IconJavascript from "./iconJavascript.svg";
+import IconLinkedin from "./iconLinkedin.svg";
 import IconLinux from "./iconLinux.svg";
+import IconLocation from "./iconLocation.svg";
 import IconMaterialUI from "./iconMaterialUI.svg";
 import IconNextjs from "./iconNextjs.svg";
 import IconNodeJs from "./iconNodeJs.svg";
@@ -24,9 +28,13 @@ export {
   IconDocker,
   IconExpress,
   IconGit,
+  IconGithub,
+  IconGmail,
   IconHTML,
   IconJavascript,
+  IconLinkedin,
   IconLinux,
+  IconLocation,
   IconMaterialUI,
   IconNextjs,
   IconNodeJs,
