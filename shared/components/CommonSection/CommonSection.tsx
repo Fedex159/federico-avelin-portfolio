@@ -21,8 +21,6 @@ const handleIntersection = (entry: IntersectionObserverEntry) => {
   if (isIntersecting) {
     document.body.setAttribute(ACTIVE_SECTION_ATTRIBUTE, id);
   }
-
-  // console.log({ isIntersecting, id, entry });
 };
 
 export const CommonSection = ({ children, ...props }: Props) => {
