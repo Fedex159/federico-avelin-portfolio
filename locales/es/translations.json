@@ -19,5 +19,37 @@
     "title": "Sobre mi",
     "description": "Soy Federico Avelin, desarrollador FullStack. Me apasiona aprovechar mis diversos antecedentes para descifrar problemas desafiantes y crear experiencias agradables. Perfecciono mis habilidades todos los días, para mantenerme actualizado y seguir avanzando en mi carrera como desarrollador.\n\n Desarrollo sitios web con HTML, CSS y JavaScript. Para el front, me encanta usar React junto con Redux, y para el back Express junto con postgresql y Sequelize.\n\n Siempre trabajo para lograr el mejor resultado en cada proyecto que tengo en mis manos, conmigo encontrarás a alguien que no se rendirá fácilmente.",
     "downloadCv": "Descargar CV"
+  },
+  "technologies": {
+    "title": "Tecnologías",
+    "categories": {
+      "coreWeb": "Core Web & Styling",
+      "javascriptEcosystem": "Javascript Ecosystem & Libraries",
+      "backend": "Backend & Fullstack",
+      "tools": "Development Tools & Environment"
+    },
+    "icons": {
+      "css": "CSS",
+      "docker": "Docker",
+      "express": "Express",
+      "git": "Git",
+      "html": "HTML",
+      "javascript": "JavaScript",
+      "linux": "Linux",
+      "materialUI": "Material UI",
+      "nextjs": "Next.js",
+      "node": "Node.js",
+      "npm": "npm",
+      "postgresql": "PostgreSQL",
+      "postman": "Postman",
+      "pwa": "PWA",
+      "react": "React",
+      "reactHookForm": "React Hook Form",
+      "styledComponents": "Styled Components",
+      "tailwind": "Tailwind",
+      "tanstack": "Tanstack",
+      "typescript": "TypeScript",
+      "vite": "Vite"
+    }
   }
 }
