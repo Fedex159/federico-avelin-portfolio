@@ -1,4 +1,11 @@
-import { About, Contact, Header, Home, Technologies } from "@/shared/sections";
+import {
+  About,
+  Contact,
+  Footer,
+  Header,
+  Home,
+  Technologies,
+} from "@/shared/sections";
 import { setRequestLocale } from "next-intl/server";
 import { StyledMain } from "./page.styles";
 
@@ -20,6 +27,7 @@ export default async function Page({ params }: Props) {
         <Technologies />
         <Contact />
       </StyledMain>
+      <Footer />
     </>
   );
 }

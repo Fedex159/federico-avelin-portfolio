@@ -67,5 +67,8 @@
       "message": "Mensaje*",
       "submit": "Enviar"
     }
+  },
+  "footer": {
+    "copyright": "Federico Avelin ® {year}"
   }
 }
