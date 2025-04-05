@@ -51,5 +51,21 @@
       "typescript": "TypeScript",
       "vite": "Vite"
     }
+  },
+  "contact": {
+    "title": "Contáctame",
+    "info": {
+      "location": "Rosario, Santa Fe, Argentina",
+      "email": "fede.avelin.dev@gmail.com",
+      "github": "github.com/fedex159",
+      "linkedin": "linkedin.com/in/federico-avelin-dev/"
+    },
+    "form": {
+      "fullName": "Nombre Completo*",
+      "email": "Email*",
+      "subject": "Asunto*",
+      "message": "Mensaje*",
+      "submit": "Enviar"
+    }
   }
 }

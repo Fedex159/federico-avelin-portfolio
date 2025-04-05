@@ -1,7 +1,6 @@
-import { About, Header, Home } from "@/shared/sections";
+import { About, Contact, Header, Home, Technologies } from "@/shared/sections";
 import { setRequestLocale } from "next-intl/server";
 import { StyledMain } from "./page.styles";
-import { Technologies } from "@/shared/sections/Technologies/Technologies";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -19,6 +18,7 @@ export default async function Page({ params }: Props) {
         <Home />
         <About />
         <Technologies />
+        <Contact />
       </StyledMain>
     </>
   );
