@@ -1,6 +1,7 @@
 import { profileImage } from "@/public/assets";
 import { CommonSection } from "@/shared/components";
 import { mixinButton } from "@/shared/styles/mixins";
+import { SectionIdEnum } from "@/shared/types/common";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import {
@@ -17,7 +18,7 @@ export const Home = () => {
   const t = useTranslations("home");
 
   return (
-    <CommonSection className={homeSectionClassname} id="home">
+    <CommonSection className={homeSectionClassname} id={SectionIdEnum.HOME}>
       <Image
         className={imageClassname}
         src={profileImage}

@@ -6,6 +6,7 @@ export const homeSectionClassname = clsx`
   items-center
   justify-center
   gap-5
+  bg-transparent
   md:flex-row-reverse
   md:justify-between
   [&&]:min-h-[calc(100dvh_-_var(--header-height))]
