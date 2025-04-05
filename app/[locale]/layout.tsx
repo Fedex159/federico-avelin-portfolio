@@ -8,7 +8,7 @@ import "@/shared/styles/globals.css";
 import { StyledBody } from "./layout.styles";
 
 const montserrat = Montserrat({
-  weight: ["400", "700"],
+  weight: ["400", "600", "700"],
   style: ["normal", "italic"],
   subsets: ["latin"],
   display: "swap",
