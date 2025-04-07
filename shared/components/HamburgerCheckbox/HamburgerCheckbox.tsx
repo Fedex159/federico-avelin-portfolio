@@ -11,7 +11,6 @@ export const HamburgerCheckbox = (props: Props) => {
       {...props}
       type="checkbox"
       onBlur={(e: FocusEvent<HTMLInputElement, Element>) => {
-        console.log(e.relatedTarget?.hasAttribute("data-allow-click"));
         setTimeout(() => {
           e.target.checked = false;
         }, 100);
