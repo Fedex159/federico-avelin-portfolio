@@ -138,6 +138,7 @@ export const StyledProjectTitle = tw.h4`
 export const StyledProjectDescription = tw.p`
   col-span-2
   row-start-2
+  whitespace-pre-line
 `;
 
 export const projectImageClassname = clsx`
