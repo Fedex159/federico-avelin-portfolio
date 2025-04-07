@@ -14,6 +14,7 @@ export const LanguageSelector = () => {
     ({ newLocale }: { newLocale: Locale }) => {
       router.replace(`${pathname}${window.location.hash}` as never, {
         locale: newLocale,
+        scroll: false,
       });
     },
     [pathname, router],
