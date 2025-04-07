@@ -7,3 +7,4 @@ import usaFlag from "./usaFlag.png";
 
 export { about, argFlag, hamburger, logo, profileImage, usaFlag };
 export * from "./icons";
+export * from "./images";
