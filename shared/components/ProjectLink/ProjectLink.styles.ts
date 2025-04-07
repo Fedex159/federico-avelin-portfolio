@@ -1,5 +1,4 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import tw, { clsx } from "@/shared/utils/tailwind";
+import { clsx } from "@/shared/utils/tailwind";
 
 export const linkClassname = clsx`
   hover:shadow-project-link
