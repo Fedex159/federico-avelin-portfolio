@@ -4,6 +4,7 @@ import {
   Footer,
   Header,
   Home,
+  Projects,
   Technologies,
 } from "@/shared/sections";
 import { setRequestLocale } from "next-intl/server";
@@ -25,6 +26,7 @@ export default async function Page({ params }: Props) {
         <Home />
         <About />
         <Technologies />
+        <Projects />
         <Contact />
       </StyledMain>
       <Footer />

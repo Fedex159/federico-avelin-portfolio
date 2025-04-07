@@ -68,6 +68,39 @@
       "submit": "Submit"
     }
   },
+  "projects": {
+    "title": "Projects",
+    "links": {
+      "repository": "Repository",
+      "website": "Website"
+    },
+    "items": {
+      "webService": {
+        "title": "Web Service",
+        "description": "E-commerce of sales and acquisition of services. Includes cart, payment methods, user panel, chat and many other features."
+      },
+      "videogames": {
+        "title": "Videogames",
+        "description": "Video games app. Some of the main functions are: video game search, filtering, creation of new video games, paging."
+      },
+      "snake": {
+        "title": "Snake React",
+        "description": "Classic arcade videogame of Snake. It has 3 difficulties, sounds and responsive. Functional on mobile devices."
+      },
+      "gifs": {
+        "title": "Gif Finder",
+        "description": "Gifs app. Some of the main functions are: GIF search, color selector, add to favorites, carousel."
+      },
+      "porfolio": {
+        "title": "Portfolio",
+        "description": "My personal portfolio. Made with React and Typescript. You will find my personal information, projects and technologies."
+      },
+      "liteflix": {
+        "title": "Liteflix",
+        "description": "Dynamic movie catalog. Challenge done as challenged for litebox company. "
+      }
+    }
+  },
   "footer": {
     "copyright": "Federico Avelin ® {year}"
   }

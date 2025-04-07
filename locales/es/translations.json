@@ -68,6 +68,39 @@
       "submit": "Enviar"
     }
   },
+  "projects": {
+    "title": "Proyectos",
+    "links": {
+      "repository": "Repositorio",
+      "website": "Sitio Web"
+    },
+    "items": {
+      "webService": {
+        "title": "Web Service",
+        "description": "E-commerce de ventas y adquisición de servicios. Incluye carrito, métodos de pago, panel de usuario, chat y muchas otras funciones."
+      },
+      "videogames": {
+        "title": "Videogames",
+        "description": "App de videojuegos. Algunas de las funciones principales son: búsqueda de videojuegos, filtrado, creación de nuevos videojuegos, paginación."
+      },
+      "snake": {
+        "title": "Snake React",
+        "description": "Clásico videojuego arcade de Snake. Tiene 3 dificultades, sonidos y responsive. Functional en dispositivos mobiles."
+      },
+      "gifs": {
+        "title": "Gif Finder",
+        "description": "App de Gifs. Algunas de las funciones principales son: búsqueda de GIF, selector de color, agregar a favoritos, carrusel."
+      },
+      "porfolio": {
+        "title": "Portfolio",
+        "description": "Mi portfolio personal. Hecho con React y Typescript. Encontraran mi información personal, proyectos y tecnologías."
+      },
+      "liteflix": {
+        "title": "Liteflix",
+        "description": "Catalogo de películas dinámico. Challenge hecho como desafió para la empresa litebox."
+      }
+    }
+  },
   "footer": {
     "copyright": "Federico Avelin ® {year}"
   }
