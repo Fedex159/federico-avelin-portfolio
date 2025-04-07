@@ -76,15 +76,15 @@
     "items": {
       "webService": {
         "title": "Web Service",
-        "description": "E-commerce de ventas y adquisición de servicios. Incluye carrito, métodos de pago, panel de usuario, chat y muchas otras funciones."
+        "description": "Es un e-commerce final de carrera para conectar oferta y demanda de servicios (plomería, clases, etc.). Lideré el equipo en la organización y desarrollo del proyecto.\n\nOfrece publicación de servicios, sistema de calificaciones, carrito de compras con pagos (MercadoPago/PayPal) y chat en tiempo real. Incluye paneles de usuario y administrador con estadísticas.\n\nDesarrollado con React, Express, PostgreSQL y Material UI, implementamos funcionalidades completas incluyendo autenticación. Es un proyecto de estudio totalmente funcional."
       },
       "videogames": {
         "title": "Videogames",
-        "description": "App de videojuegos. Algunas de las funciones principales son: búsqueda de videojuegos, filtrado, creación de nuevos videojuegos, paginación."
+        "description": "Fue un proyecto individual de fin de carrera que consistió en el desarrollo de una aplicación web para la búsqueda y gestión de videojuegos.\n\nOfrece búsqueda y filtrado de videojuegos (con la API de RAWG), creación de nuevos videojuegos, paginación y página de detalle. También es responsive.\n\nDesarrollado con React, Express y PostgreSQL, este proyecto individual fue crucial para mi aprendizaje full-stack y la integración de APIs como la de RAWG."
       },
       "snake": {
         "title": "Snake React",
-        "description": "Clásico videojuego arcade de Snake. Tiene 3 dificultades, sonidos y responsive. Functional en dispositivos mobiles."
+        "description": "Es una recreación del clásico videojuego de la Serpiente, desarrollada como un desafío personal para explorar las capacidades de React en la creación de lógica de juegos interactivos.\n\nOfrece tres niveles de dificultad, efectos de sonido y es totalmente responsive, funcionando en escritorio y dispositivos móviles con controles táctiles o botones.\n\nCon un diseño simple, el foco principal fue la desafiante implementación de la lógica del juego en React, resultando en una valiosa experiencia de aprendizaje."
       },
       "gifs": {
         "title": "Gif Finder",

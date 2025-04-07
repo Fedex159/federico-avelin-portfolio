@@ -76,15 +76,15 @@
     "items": {
       "webService": {
         "title": "Web Service",
-        "description": "E-commerce of sales and acquisition of services. Includes cart, payment methods, user panel, chat and many other features."
+        "description": "It's a final degree e-commerce project to connect the supply and demand of services (plumbing, classes, etc.). I led the team in the organization and development of the project.\n\nIt offers service publication, a rating system, a shopping cart with payments (MercadoPago/PayPal), and real-time chat. It includes user and administrator panels with statistics.\n\nDeveloped with React, Express, PostgreSQL, and Material UI, we implemented complete functionalities including authentication. It's a fully functional study project."
       },
       "videogames": {
         "title": "Videogames",
-        "description": "Video games app. Some of the main functions are: video game search, filtering, creation of new video games, paging."
+        "description": "Was an individual final degree project that consisted of developing a web application for searching and managing video games.\n\nIt offers search and filtering of video games (using the RAWG API), creation of new video games, pagination, and a detail page. It is also responsive.\n\nDeveloped with React, Express, and PostgreSQL, this individual project was crucial for my full-stack learning and the integration of APIs like the RAWG API."
       },
       "snake": {
         "title": "Snake React",
-        "description": "Classic arcade videogame of Snake. It has 3 difficulties, sounds and responsive. Functional on mobile devices."
+        "description": "It's a recreation of the classic Snake video game, developed as a personal challenge to explore React's capabilities in creating interactive game logic.\n\nIt offers three difficulty levels, sound effects, and is fully responsive, working on desktop and mobile devices with touch controls or buttons.\n\nWith a simple design, the main focus was the challenging implementation of the game logic in React, resulting in a valuable learning experience."
       },
       "gifs": {
         "title": "Gif Finder",
