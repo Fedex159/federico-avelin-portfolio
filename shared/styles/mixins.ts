@@ -7,6 +7,7 @@ export const mixinButton = clsx`
   rounded-2xl
   bg-(--color-primary)
   p-3
+  text-center
   font-bold
   text-black
   transition-shadow
