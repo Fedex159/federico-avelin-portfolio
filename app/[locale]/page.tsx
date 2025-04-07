@@ -9,6 +9,7 @@ import {
 } from "@/shared/sections";
 import { setRequestLocale } from "next-intl/server";
 import { StyledMain } from "./page.styles";
+import { ActiveSectionStoreProvider } from "@/shared/providers/active-section-store-provider";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -22,13 +23,15 @@ export default async function Page({ params }: Props) {
   return (
     <>
       <Header />
-      <StyledMain>
-        <Home />
-        <About locale={locale} />
-        <Technologies />
-        <Projects />
-        <Contact />
-      </StyledMain>
+      <ActiveSectionStoreProvider>
+        <StyledMain>
+          <Home />
+          <About locale={locale} />
+          <Technologies />
+          <Projects />
+          <Contact />
+        </StyledMain>
+      </ActiveSectionStoreProvider>
       <Footer />
     </>
   );
