@@ -9,10 +9,10 @@ import {
   imageClassname,
   StyledContent,
   StyledDescription,
-  StyledIntro,
   StyledSubtitle,
   StyledTitle,
 } from "./Home.styles";
+import Link from "next/link";
 
 export const Home = () => {
   const t = useTranslations("home");
@@ -25,11 +25,12 @@ export const Home = () => {
         alt="profile-user-image"
       />
       <StyledContent>
-        <StyledIntro>{t("intro")}</StyledIntro>
         <StyledTitle>{t("title")}</StyledTitle>
         <StyledSubtitle>{t("subtitle")}</StyledSubtitle>
         <StyledDescription>{t("description")}</StyledDescription>
-        <button className={mixinButton}>{t("hireMe")}</button>
+        <Link href={`#${SectionIdEnum.CONTACT}`} className={mixinButton}>
+          {t("chat")}
+        </Link>
       </StyledContent>
     </CommonSection>
   );

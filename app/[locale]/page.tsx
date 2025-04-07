@@ -24,7 +24,7 @@ export default async function Page({ params }: Props) {
       <Header />
       <StyledMain>
         <Home />
-        <About />
+        <About locale={locale} />
         <Technologies />
         <Projects />
         <Contact />

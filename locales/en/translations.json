@@ -9,15 +9,14 @@
     }
   },
   "home": {
-    "intro": "Hi There 👋 I'm",
     "title": "Federico Avelin",
     "subtitle": "Fullstack Web Developer",
-    "description": "Excellent predisposition for teamwork, maintaining the ability to develop projects that are scalable and modular. I ❤️ React and Express.",
-    "hireMe": "Hire Me"
+    "description": "Passionate about building quality software. My focus is on solid architecture, clean code, and the delivery of tangible value through modern web technology.",
+    "chat": "Let's Chat"
   },
   "about": {
     "title": "About Me",
-    "description": "I'm Federico Avelin, FullStack developer. I am passionate about leveraging my diverse backgrounds to decipher challenging problems and create enjoyable experiences. I perfect my skills every day, to keep up to date and continue advancing in my career as a developer.\n\n I develop websites with HTML, CSS and JavaScript. For the front, I love to use React alongside Redux, and for the back Express along with postgresql and Sequelize.\n\n I always work to achieve the best result in each project that I have in my hands, with me you will find someone who will not give up easily.",
+    "description": "Hi! I'm Federico, a full-stack web developer with {years} years of experience dedicated to building incredible web experiences.\n\nI love transforming ideas into digital reality, paying special attention to code quality and usability. I work comfortably with HTML, CSS, TypeScript, React, Next.js, and Tailwind CSS, and I really enjoy discovering and using new tools that improve my work.\n\nIf you have a project in mind, I'd love to chat and see how I can help you bring it to life!",
     "downloadCv": "Download CV"
   },
   "technologies": {

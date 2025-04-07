@@ -31,11 +31,6 @@ export const StyledContent = tw.div`
   gap-5
 `;
 
-export const StyledIntro = tw.span`
-  text-xl
-  font-bold
-`;
-
 export const StyledTitle = tw.h1`
   text-6xl
   font-bold
