@@ -5,7 +5,7 @@ import { useIsOnScreen } from "./useIsOnScreen";
 
 const INTERSECTION_OPTIONS: IntersectionObserverInit = {
   threshold: 0,
-  rootMargin: "-80px",
+  rootMargin: "-81px",
 };
 
 const ACTIVE_SECTION_ATTRIBUTE = "data-active-section";
