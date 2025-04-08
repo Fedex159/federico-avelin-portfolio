@@ -1,10 +1,10 @@
+import { Link } from "@/i18n/routing";
 import { logo } from "@/public/assets";
 import { HamburgerCheckbox, LanguageSelector } from "@/shared/components";
 import { SectionIdEnum } from "@/shared/types/common";
 import { Translations } from "@/shared/types/translations";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import Link from "next/link";
 import { getNavLinkClassname, SC } from "./Header.styles";
 
 type NavLinks = Array<{

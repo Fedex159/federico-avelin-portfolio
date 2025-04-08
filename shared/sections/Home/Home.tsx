@@ -1,10 +1,10 @@
+import { Link } from "@/i18n/routing";
 import { profileImage } from "@/public/assets";
 import { CommonSection } from "@/shared/components";
 import { mixinButton } from "@/shared/styles/mixins";
 import { SectionIdEnum } from "@/shared/types/common";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import Link from "next/link";
 import { Classname, SC } from "./Home.styles";
 
 export const Home = () => {
