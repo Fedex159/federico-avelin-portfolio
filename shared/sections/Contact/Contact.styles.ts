@@ -52,6 +52,7 @@ const InfoItemLink = clsx`
 `;
 
 const Form = tw.form`
+  group
   flex
   w-full
   flex-col
@@ -89,18 +90,12 @@ const TextArea = tw.textarea`
   not-valid:focus:outline-red-500
 `;
 
-const SubmitButton = tw.button`
-  group-invalid:cursor-not-allowed
-  group-invalid:opacity-20
-`;
-
 export const SC = {
   InfoContainer,
   InfoItem,
   Form,
   Input,
   TextArea,
-  SubmitButton,
 };
 
 export const Classname = {

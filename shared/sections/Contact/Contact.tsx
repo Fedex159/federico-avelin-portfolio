@@ -1,11 +1,16 @@
-import { CommonSection, CommonTitle } from "@/shared/components";
-import { mixinButton } from "@/shared/styles/mixins";
+import { sendContactForm } from "@/shared/actions/sendContactForm";
+import {
+  CommonSection,
+  CommonTitle,
+  SubmitContactFormButton,
+} from "@/shared/components";
 import { SectionIdEnum } from "@/shared/types/common";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { INFO_LIST } from "./constants";
 import { Classname, SC } from "./Contact.styles";
+import { FormFieldsEnum } from "@/shared/types/contactForm";
 
 export const Contact = () => {
   const t = useTranslations("contact");
@@ -33,36 +38,34 @@ export const Contact = () => {
           </SC.InfoItem>
         ))}
       </SC.InfoContainer>
-      <SC.Form className="group">
+      <SC.Form action={sendContactForm}>
         <SC.Input
           maxLength={40}
-          name="fullName"
+          name={FormFieldsEnum.FULLNAME}
           placeholder={t("form.fullName")}
           required
         />
         <SC.Input
           maxLength={100}
-          name="email"
+          name={FormFieldsEnum.EMAIL}
           placeholder={t("form.email")}
           required
           type="email"
         />
         <SC.Input
           maxLength={80}
-          name="subject"
+          name={FormFieldsEnum.SUBJECT}
           placeholder={t("form.subject")}
           required
         />
         <SC.TextArea
           minLength={30}
-          name="message"
+          name={FormFieldsEnum.MESSAGE}
           placeholder={t("form.message")}
           required
           rows="5"
         />
-        <SC.SubmitButton type="submit" className={mixinButton}>
-          {t("form.submit")}
-        </SC.SubmitButton>
+        <SubmitContactFormButton />
       </SC.Form>
     </CommonSection>
   );
