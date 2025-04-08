@@ -1,13 +1,13 @@
 "use client";
 
 import { ComponentProps, FocusEvent } from "react";
-import { StyledCheckbox } from "./HamburgerCheckbox.styles";
+import { SC } from "./HamburgerCheckbox.styles";
 
 type Props = Omit<ComponentProps<"input">, "onBlur" | "type">;
 
 export const HamburgerCheckbox = (props: Props) => {
   return (
-    <StyledCheckbox
+    <SC.Checkbox
       {...props}
       type="checkbox"
       onBlur={(e: FocusEvent<HTMLInputElement, Element>) => {

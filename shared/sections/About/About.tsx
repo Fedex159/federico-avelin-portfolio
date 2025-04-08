@@ -3,13 +3,8 @@ import { CommonSection, CommonTitle } from "@/shared/components";
 import { SectionIdEnum } from "@/shared/types/common";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import {
-  aboutImageClassname,
-  aboutSectionClassname,
-  classNameDownloadButton,
-  StyledDescription,
-} from "./About.styles";
 import Link from "next/link";
+import { Classname, SC } from "./About.styles";
 
 const YEARS = new Date().getFullYear() - 2021;
 
@@ -27,17 +22,11 @@ export const About = ({ locale }: Props) => {
   const cvUrl = CV_LINKS[locale as keyof typeof CV_LINKS];
 
   return (
-    <CommonSection className={aboutSectionClassname} id={SectionIdEnum.ABOUT}>
-      <Image
-        className={aboutImageClassname}
-        src={about}
-        alt="developer-coding"
-      />
+    <CommonSection className={Classname.Section} id={SectionIdEnum.ABOUT}>
+      <Image className={Classname.Image} src={about} alt="developer-coding" />
       <CommonTitle>{t("title")}</CommonTitle>
-      <StyledDescription>
-        {t("description", { years: YEARS })}
-      </StyledDescription>
-      <Link href={cvUrl} className={classNameDownloadButton} target="_blank">
+      <SC.Description>{t("description", { years: YEARS })}</SC.Description>
+      <Link href={cvUrl} className={Classname.DownloadButton} target="_blank">
         {t("downloadCv")}
       </Link>
     </CommonSection>

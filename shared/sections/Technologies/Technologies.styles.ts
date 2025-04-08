@@ -1,18 +1,18 @@
 import tw, { clsx } from "@/shared/utils/tailwind";
 
-export const technologiesSectionClassname = clsx`
+const Section = clsx`
   flex
   flex-col
   items-center
   justify-center
 `;
 
-export const technologiesTitleClassname = clsx`
+const Title = clsx`
   mt-0
   [&&]:mb-7
 `;
 
-export const StyledTechContainer = tw.div`
+const Container = tw.div`
   grid
   grid-cols-1
   items-center
@@ -21,7 +21,7 @@ export const StyledTechContainer = tw.div`
   md:grid-cols-2
 `;
 
-export const StyledItemsContainer = tw.div`
+const ItemsContainer = tw.div`
   nth-[4]:border-purple-tech
   nth-[4]:[&_h4]:text-purple-tech
   bg-main-background
@@ -44,13 +44,13 @@ export const StyledItemsContainer = tw.div`
   nth-[2]:[&_h4]:text-sky-400
 `;
 
-export const StyledCategoryTitle = tw.h4`
+const ItemsCategoryTitle = tw.h4`
   text-center
   text-2xl
   font-bold
 `;
 
-export const StyledItemsList = tw.ul`
+const ItemsList = tw.ul`
   flex
   flex-wrap
   content-center
@@ -59,7 +59,7 @@ export const StyledItemsList = tw.ul`
   gap-2.5
 `;
 
-export const StyledItem = tw.li`
+const Item = tw.li`
   flex
   h-24
   w-24
@@ -69,8 +69,22 @@ export const StyledItem = tw.li`
   gap-2.5
 `;
 
-export const StyledTechName = tw.span`
+const ItemTechName = tw.span`
   text-center
   text-sm
   font-semibold
 `;
+
+export const SC = {
+  Container,
+  ItemsContainer,
+  ItemsCategoryTitle,
+  ItemsList,
+  Item,
+  ItemTechName,
+};
+
+export const Classname = {
+  Section,
+  Title,
+};

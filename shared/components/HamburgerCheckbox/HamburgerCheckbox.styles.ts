@@ -1,6 +1,6 @@
 import tw from "@/shared/utils/tailwind";
 
-export const StyledCheckbox = tw.input`
+const Checkbox = tw.input`
   peer
   absolute
   top-1/2
@@ -13,3 +13,7 @@ export const StyledCheckbox = tw.input`
   opacity-0
   md:hidden
 `;
+
+export const SC = {
+  Checkbox,
+};

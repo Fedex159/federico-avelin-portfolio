@@ -2,16 +2,7 @@ import { CommonSection, CommonTitle } from "@/shared/components";
 import { SectionIdEnum } from "@/shared/types/common";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import {
-  StyledCategoryTitle,
-  StyledItem,
-  StyledItemsContainer,
-  StyledItemsList,
-  StyledTechContainer,
-  StyledTechName,
-  technologiesSectionClassname,
-  technologiesTitleClassname,
-} from "./Technologies.styles";
+import { Classname, SC } from "./Technologies.styles";
 import { TECHNOLOGIES_LIST } from "./constants";
 
 export const Technologies = () => {
@@ -19,35 +10,33 @@ export const Technologies = () => {
 
   return (
     <CommonSection
-      className={technologiesSectionClassname}
+      className={Classname.Section}
       id={SectionIdEnum.TECHNOLOGIES}
     >
-      <CommonTitle className={technologiesTitleClassname}>
-        {t("title")}
-      </CommonTitle>
-      <StyledTechContainer>
+      <CommonTitle className={Classname.Title}>{t("title")}</CommonTitle>
+      <SC.Container>
         {TECHNOLOGIES_LIST.map(({ categoryTranslationKey, items }) => {
           return (
-            <StyledItemsContainer key={categoryTranslationKey}>
-              <StyledCategoryTitle>
+            <SC.ItemsContainer key={categoryTranslationKey}>
+              <SC.ItemsCategoryTitle>
                 {t(categoryTranslationKey)}
-              </StyledCategoryTitle>
-              <StyledItemsList>
+              </SC.ItemsCategoryTitle>
+              <SC.ItemsList>
                 {items.map(({ icon, translationKey }) => {
                   const techName = t(translationKey);
 
                   return (
-                    <StyledItem key={translationKey}>
+                    <SC.Item key={translationKey}>
                       <Image src={icon} alt={techName} height={50} />
-                      <StyledTechName>{techName}</StyledTechName>
-                    </StyledItem>
+                      <SC.ItemTechName>{techName}</SC.ItemTechName>
+                    </SC.Item>
                   );
                 })}
-              </StyledItemsList>
-            </StyledItemsContainer>
+              </SC.ItemsList>
+            </SC.ItemsContainer>
           );
         })}
-      </StyledTechContainer>
+      </SC.Container>
     </CommonSection>
   );
 };

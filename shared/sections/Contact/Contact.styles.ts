@@ -1,6 +1,6 @@
 import tw, { clsx } from "@/shared/utils/tailwind";
 
-export const contactSectionClassname = clsx`
+const Section = clsx`
   flex
   flex-col
   items-center
@@ -13,7 +13,7 @@ export const contactSectionClassname = clsx`
   md:items-start
 `;
 
-export const contactTitleClassname = clsx`
+const Title = clsx`
   md:col-span-2
   md:col-start-1
   md:self-end
@@ -21,7 +21,7 @@ export const contactTitleClassname = clsx`
   [&&]:mb-5
 `;
 
-export const StyledInfoContainer = tw.ul`
+const InfoContainer = tw.ul`
   mx-auto
   flex
   w-max
@@ -33,25 +33,25 @@ export const StyledInfoContainer = tw.ul`
   md:gap-12
 `;
 
-export const StyledInfoItem = tw.li`
+const InfoItem = tw.li`
   flex
   items-center
   gap-2.5
 `;
 
-export const infoItemIconClassname = clsx`
+const InfoItemIcon = clsx`
   bg-primary
   rounded-full
   border-8
 `;
 
-export const infoItemLinkClassname = clsx`
+const InfoItemLink = clsx`
   font-semibold
   text-nowrap
   hover:underline
 `;
 
-export const StyledForm = tw.form`
+const Form = tw.form`
   flex
   w-full
   flex-col
@@ -61,7 +61,7 @@ export const StyledForm = tw.form`
   md:row-start-2
 `;
 
-export const StyledInput = tw.input`
+const Input = tw.input`
   focus:outline-primary
   h-13
   w-full
@@ -75,7 +75,7 @@ export const StyledInput = tw.input`
   not-valid:focus:outline-red-500
 `;
 
-export const StyledTextArea = tw.textarea`
+const TextArea = tw.textarea`
   focus:outline-primary
   w-full
   resize-y
@@ -89,7 +89,23 @@ export const StyledTextArea = tw.textarea`
   not-valid:focus:outline-red-500
 `;
 
-export const StyledSubmitButton = tw.button`
+const SubmitButton = tw.button`
   group-invalid:cursor-not-allowed
   group-invalid:opacity-20
 `;
+
+export const SC = {
+  InfoContainer,
+  InfoItem,
+  Form,
+  Input,
+  TextArea,
+  SubmitButton,
+};
+
+export const Classname = {
+  Section,
+  Title,
+  InfoItemIcon,
+  InfoItemLink,
+};

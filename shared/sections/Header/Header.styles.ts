@@ -1,7 +1,7 @@
 import { SectionIdEnum } from "@/shared/types/common";
 import tw, { clsx } from "@/shared/utils/tailwind";
 
-export const StyledHeader = tw.header`
+const Header = tw.header`
   bg-header-background
   h-header-height
   sticky
@@ -15,7 +15,7 @@ export const StyledHeader = tw.header`
   text-white
 `;
 
-export const StyledHamburgerMenu = tw.label`
+const HamburgerMenu = tw.label`
   absolute
   top-1/2
   right-[10px]
@@ -32,7 +32,7 @@ export const StyledHamburgerMenu = tw.label`
   md:hidden
 `;
 
-export const StyledNav = tw.nav`
+const Nav = tw.nav`
   bg-header-background
   fixed
   top-20
@@ -86,4 +86,10 @@ export const getNavLinkClassname = (sectionId: SectionIdEnum) => {
   after:duration-300
   hover:after:w-full
 `;
+};
+
+export const SC = {
+  Header,
+  HamburgerMenu,
+  Nav,
 };

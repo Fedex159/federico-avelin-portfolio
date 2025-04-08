@@ -5,12 +5,7 @@ import { Translations } from "@/shared/types/translations";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  getNavLinkClassname,
-  StyledHamburgerMenu,
-  StyledHeader,
-  StyledNav,
-} from "./Header.styles";
+import { getNavLinkClassname, SC } from "./Header.styles";
 
 type NavLinks = Array<{
   sectionId: SectionIdEnum;
@@ -44,13 +39,13 @@ export const Header = () => {
   const t = useTranslations("header");
 
   return (
-    <StyledHeader>
+    <SC.Header>
       <Link href={`#${NAV_LINKS[0].sectionId}`}>
         <Image src={logo} alt="logo" width={87} />
       </Link>
-      <StyledHamburgerMenu htmlFor="hamburger-menu" />
+      <SC.HamburgerMenu htmlFor="hamburger-menu" />
       <HamburgerCheckbox id="hamburger-menu" />
-      <StyledNav>
+      <SC.Nav>
         {NAV_LINKS.map(({ sectionId, translationKey }, index) => (
           <Link
             className={getNavLinkClassname(sectionId)}
@@ -61,7 +56,7 @@ export const Header = () => {
           </Link>
         ))}
         <LanguageSelector />
-      </StyledNav>
-    </StyledHeader>
+      </SC.Nav>
+    </SC.Header>
   );
 };

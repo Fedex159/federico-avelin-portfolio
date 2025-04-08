@@ -1,7 +1,7 @@
 import { mixinButton } from "@/shared/styles/mixins";
 import tw, { clsx } from "@/shared/utils/tailwind";
 
-export const aboutSectionClassname = clsx`
+const Section = clsx`
   grid
   grid-cols-[1fr_auto_1fr]
   items-center
@@ -14,7 +14,7 @@ export const aboutSectionClassname = clsx`
   md:*:row-start-1
 `;
 
-export const aboutImageClassname = clsx`
+const Image = clsx`
   shadow-about-image
   mx-auto
   h-96
@@ -26,13 +26,23 @@ export const aboutImageClassname = clsx`
   lg:scale-150
 `;
 
-export const StyledDescription = tw.p`
+const Description = tw.p`
   max-w-[400px]
   whitespace-pre-line
   md:my-24
 `;
 
-export const classNameDownloadButton = clsx`
+const DownloadButton = clsx`
   ${mixinButton}
   md:mt-auto
 `;
+
+export const SC = {
+  Description,
+};
+
+export const Classname = {
+  Section,
+  Image,
+  DownloadButton,
+};

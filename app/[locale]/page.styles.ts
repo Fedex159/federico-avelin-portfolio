@@ -1,7 +1,11 @@
 import tw from "@/shared/utils/tailwind";
 
-export const StyledMain = tw.main`
+const Main = tw.main`
   w-full
   overflow-hidden
   text-white
 `;
+
+export const SC = {
+  Main,
+};

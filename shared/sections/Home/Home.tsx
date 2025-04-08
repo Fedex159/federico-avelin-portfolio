@@ -4,34 +4,27 @@ import { mixinButton } from "@/shared/styles/mixins";
 import { SectionIdEnum } from "@/shared/types/common";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import {
-  homeSectionClassname,
-  imageClassname,
-  StyledContent,
-  StyledDescription,
-  StyledSubtitle,
-  StyledTitle,
-} from "./Home.styles";
 import Link from "next/link";
+import { Classname, SC } from "./Home.styles";
 
 export const Home = () => {
   const t = useTranslations("home");
 
   return (
-    <CommonSection className={homeSectionClassname} id={SectionIdEnum.HOME}>
+    <CommonSection className={Classname.Section} id={SectionIdEnum.HOME}>
       <Image
-        className={imageClassname}
+        className={Classname.Image}
         src={profileImage}
         alt="profile-user-image"
       />
-      <StyledContent>
-        <StyledTitle>{t("title")}</StyledTitle>
-        <StyledSubtitle>{t("subtitle")}</StyledSubtitle>
-        <StyledDescription>{t("description")}</StyledDescription>
+      <SC.Content>
+        <SC.Title>{t("title")}</SC.Title>
+        <SC.Subtitle>{t("subtitle")}</SC.Subtitle>
+        <SC.Description>{t("description")}</SC.Description>
         <Link href={`#${SectionIdEnum.CONTACT}`} className={mixinButton}>
           {t("chat")}
         </Link>
-      </StyledContent>
+      </SC.Content>
     </CommonSection>
   );
 };

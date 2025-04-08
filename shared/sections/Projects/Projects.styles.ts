@@ -1,22 +1,22 @@
 import tw, { clsx } from "@/shared/utils/tailwind";
 
-export const projectsSectionClassname = clsx`
+const Section = clsx`
   flex
   flex-col
   items-center
 `;
 
-export const projectTitleClassname = clsx`
+const Title = clsx`
   mt-20
 `;
 
-const projectContainerMobileStyles = clsx`
+const ContainerMobileStyles = clsx`
   mb-5
   max-w-[400px]
   auto-rows-fr
 `;
 
-const projectContainerDesktopStyles = clsx`
+const ContainerDesktopStyles = clsx`
   md:mb-0
   md:max-w-4xl
   md:grid-cols-2
@@ -25,9 +25,9 @@ const projectContainerDesktopStyles = clsx`
   md:not-last:border-b-0
 `;
 
-export const StyledProjectContainer = tw.div`
-  ${() => projectContainerMobileStyles}
-  ${() => projectContainerDesktopStyles}
+const ProjectContainer = tw.div`
+  ${() => ContainerMobileStyles}
+  ${() => ContainerDesktopStyles}
   group/tech
   relative
   mx-auto
@@ -35,7 +35,7 @@ export const StyledProjectContainer = tw.div`
   first-of-type:mt-10
 `;
 
-const swapButtonPosition = clsx`
+const SwapButtonPositionStyles = clsx`
   absolute
   top-5
   right-5
@@ -45,14 +45,14 @@ const swapButtonPosition = clsx`
   md:hidden
 `;
 
-export const StyledProjectSwapCardCheckbox = tw.input`
-  ${() => swapButtonPosition}
+const ProjectSwapCardCheckbox = tw.input`
+  ${() => SwapButtonPositionStyles}
   peer
   opacity-0
 `;
 
-export const StyledProjectSwapCardLabel = tw.label`
-  ${() => swapButtonPosition}
+const ProjectSwapCardLabel = tw.label`
+  ${() => SwapButtonPositionStyles}
   cursor-pointer
   rounded-full
   border-2
@@ -67,7 +67,7 @@ export const StyledProjectSwapCardLabel = tw.label`
   peer-checked:bg-[url('/assets/icons/iconClose.svg')]
 `;
 
-const colMobileStyles = clsx`
+const ColMobileStyles = clsx`
   bg-secondary-background
   col-start-1
   row-start-1
@@ -80,44 +80,44 @@ const colMobileStyles = clsx`
   perspective-distant
 `;
 
-const colDesktopStyles = clsx`
+const ColDesktopStyles = clsx`
   md:col-start-auto
   md:row-start-auto
   md:border-0
   md:p-5
 `;
 
-const colInfoMobileStyles = clsx`
+const ColInfoMobileStyles = clsx`
   rotate-y-180
   not-md:peer-checked:rotate-y-0
 `;
 
-const colInfoDesktopStyles = clsx`
+const ColInfoDesktopStyles = clsx`
   md:rotate-y-0
   md:group-odd/tech:col-start-2
   md:group-even/tech:border-r
   md:group-even/tech:border-gray-500
 `;
 
-export const StyledColInfo = tw.div`
-  ${() => colMobileStyles}
-  ${() => colDesktopStyles}
-  ${() => colInfoMobileStyles}
-  ${() => colInfoDesktopStyles}
+const ProjectColInfo = tw.div`
+  ${() => ColMobileStyles}
+  ${() => ColDesktopStyles}
+  ${() => ColInfoMobileStyles}
+  ${() => ColInfoDesktopStyles}
   grid
   grid-cols-2
   grid-rows-[auto_1fr_auto]
   gap-y-5
 `;
 
-const colImageMobileStyles = clsx`
+const ColImageMobileStyles = clsx`
   not-md:peer-checked:rotate-y-180
 `;
 
-export const StyledColImage = tw.div`
-  ${() => colMobileStyles}
-  ${() => colDesktopStyles}
-  ${() => colImageMobileStyles}
+const ProjectColImage = tw.div`
+  ${() => ColMobileStyles}
+  ${() => ColDesktopStyles}
+  ${() => ColImageMobileStyles}
   flex
   items-center
   justify-center
@@ -127,7 +127,7 @@ export const StyledColImage = tw.div`
   group-odd/tech:border-gray-500
 `;
 
-export const StyledProjectTitle = tw.h4`
+const ProjectTitle = tw.h4`
   col-span-2
   mt-2
   text-2xl
@@ -135,12 +135,28 @@ export const StyledProjectTitle = tw.h4`
   md:mt-0
 `;
 
-export const StyledProjectDescription = tw.p`
+const ProjectDescription = tw.p`
   col-span-2
   row-start-2
   whitespace-pre-line
 `;
 
-export const projectImageClassname = clsx`
+const ProjectImage = clsx`
   rounded-2xl
 `;
+
+export const Classname = {
+  Section,
+  Title,
+  ProjectImage,
+};
+
+export const SC = {
+  ProjectContainer,
+  ProjectSwapCardCheckbox,
+  ProjectSwapCardLabel,
+  ProjectColInfo,
+  ProjectColImage,
+  ProjectTitle,
+  ProjectDescription,
+};

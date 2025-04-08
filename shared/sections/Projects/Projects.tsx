@@ -4,28 +4,14 @@ import { SectionIdEnum } from "@/shared/types/common";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { PROJECTS_LIST } from "./constants";
-import {
-  projectImageClassname,
-  projectsSectionClassname,
-  projectTitleClassname,
-  StyledColImage,
-  StyledColInfo,
-  StyledProjectContainer,
-  StyledProjectDescription,
-  StyledProjectSwapCardCheckbox,
-  StyledProjectSwapCardLabel,
-  StyledProjectTitle,
-} from "./Projects.styles";
+import { Classname, SC } from "./Projects.styles";
 
 export const Projects = () => {
   const t = useTranslations("projects");
 
   return (
-    <CommonSection
-      className={projectsSectionClassname}
-      id={SectionIdEnum.PROJECTS}
-    >
-      <CommonTitle className={projectTitleClassname}>{t("title")}</CommonTitle>
+    <CommonSection className={Classname.Section} id={SectionIdEnum.PROJECTS}>
+      <CommonTitle className={Classname.Title}>{t("title")}</CommonTitle>
       {PROJECTS_LIST.map(
         ({
           descriptionTranslationKey,
@@ -37,17 +23,17 @@ export const Projects = () => {
           const projectTitle = t(titleTranslationKey);
 
           return (
-            <StyledProjectContainer key={titleTranslationKey}>
-              <StyledProjectSwapCardCheckbox
+            <SC.ProjectContainer key={titleTranslationKey}>
+              <SC.ProjectSwapCardCheckbox
                 id={titleTranslationKey}
                 type="checkbox"
               />
-              <StyledProjectSwapCardLabel htmlFor={titleTranslationKey} />
-              <StyledColInfo>
-                <StyledProjectTitle>{projectTitle}</StyledProjectTitle>
-                <StyledProjectDescription>
+              <SC.ProjectSwapCardLabel htmlFor={titleTranslationKey} />
+              <SC.ProjectColInfo>
+                <SC.ProjectTitle>{projectTitle}</SC.ProjectTitle>
+                <SC.ProjectDescription>
                   {t(descriptionTranslationKey)}
-                </StyledProjectDescription>
+                </SC.ProjectDescription>
                 <ProjectLink
                   href={repositoryUrl}
                   icon={IconGithub}
@@ -62,16 +48,16 @@ export const Projects = () => {
                 >
                   {t("links.website")}
                 </ProjectLink>
-              </StyledColInfo>
-              <StyledColImage>
+              </SC.ProjectColInfo>
+              <SC.ProjectColImage>
                 <Image
-                  className={projectImageClassname}
+                  className={Classname.ProjectImage}
                   src={image}
                   alt={`${projectTitle}-image`}
                   width={380}
                 />
-              </StyledColImage>
-            </StyledProjectContainer>
+              </SC.ProjectColImage>
+            </SC.ProjectContainer>
           );
         },
       )}

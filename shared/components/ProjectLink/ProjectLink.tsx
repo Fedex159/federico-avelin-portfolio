@@ -1,7 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ComponentProps } from "react";
-import { linkClassname } from "./ProjectLink.styles";
-import Image from "next/image";
+import { Classname } from "./ProjectLink.styles";
 
 type Props = {
   icon: string;
@@ -12,7 +12,7 @@ export const ProjectLink = ({ children, icon, iconAlt, ...props }: Props) => {
   return (
     <Link
       {...props}
-      className={linkClassname}
+      className={Classname.Link}
       target="_blank"
       rel="noopener noreferrer"
     >

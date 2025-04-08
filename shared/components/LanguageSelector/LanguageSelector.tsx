@@ -4,7 +4,7 @@ import { Locale, usePathname, useRouter } from "@/i18n/routing";
 import { argFlag, usaFlag } from "@/public/assets";
 import Image from "next/image";
 import { useCallback, useMemo } from "react";
-import { StyledContainer, StyledFlagButton } from "./LanguageSelector.styles";
+import { SC } from "./LanguageSelector.styles";
 
 export const LanguageSelector = () => {
   const router = useRouter();
@@ -37,12 +37,12 @@ export const LanguageSelector = () => {
   );
 
   return (
-    <StyledContainer>
+    <SC.Container>
       {languageOptions.map(({ alt, onClick, src }, index) => (
-        <StyledFlagButton key={`${alt}-${index.toString()}`} onClick={onClick}>
+        <SC.FlagButton key={`${alt}-${index.toString()}`} onClick={onClick}>
           <Image className="h-full" src={src} alt={alt} width={30} />
-        </StyledFlagButton>
+        </SC.FlagButton>
       ))}
-    </StyledContainer>
+    </SC.Container>
   );
 };

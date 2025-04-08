@@ -1,6 +1,6 @@
 import { clsx } from "@/shared/utils/tailwind";
 
-export const linkClassname = clsx`
+const Link = clsx`
   hover:shadow-project-link
   row-start-3
   mx-2
@@ -15,3 +15,7 @@ export const linkClassname = clsx`
   transition-shadow
   md:mx-5
 `;
+
+export const Classname = {
+  Link,
+};

@@ -1,3 +1,4 @@
+import { ActiveSectionStoreProvider } from "@/shared/providers/active-section-store-provider";
 import {
   About,
   Contact,
@@ -8,8 +9,7 @@ import {
   Technologies,
 } from "@/shared/sections";
 import { setRequestLocale } from "next-intl/server";
-import { StyledMain } from "./page.styles";
-import { ActiveSectionStoreProvider } from "@/shared/providers/active-section-store-provider";
+import { SC } from "./page.styles";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -24,13 +24,13 @@ export default async function Page({ params }: Props) {
     <>
       <Header />
       <ActiveSectionStoreProvider>
-        <StyledMain>
+        <SC.Main>
           <Home />
           <About locale={locale} />
           <Technologies />
           <Projects />
           <Contact />
-        </StyledMain>
+        </SC.Main>
       </ActiveSectionStoreProvider>
       <Footer />
     </>

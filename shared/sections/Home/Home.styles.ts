@@ -1,6 +1,6 @@
 import tw, { clsx } from "@/shared/utils/tailwind";
 
-export const homeSectionClassname = clsx`
+const Section = clsx`
   [&&]:min-h-home-height
   flex
   flex-col
@@ -12,7 +12,7 @@ export const homeSectionClassname = clsx`
   md:justify-between
 `;
 
-export const imageClassname = clsx`
+const Image = clsx`
   max-h-72
   min-h-72
   max-w-72
@@ -25,23 +25,35 @@ export const imageClassname = clsx`
   lg:max-w-96
 `;
 
-export const StyledContent = tw.div`
+const Content = tw.div`
   flex
   flex-col
   gap-5
 `;
 
-export const StyledTitle = tw.h1`
+const Title = tw.h1`
   text-6xl
   font-bold
 `;
 
-export const StyledSubtitle = tw.h2`
+const Subtitle = tw.h2`
   text-primary
   text-xl
   font-bold
 `;
 
-export const StyledDescription = tw.p`
+const Description = tw.p`
   max-w-xl
 `;
+
+export const SC = {
+  Content,
+  Description,
+  Subtitle,
+  Title,
+};
+
+export const Classname = {
+  Image,
+  Section,
+};

@@ -1,6 +1,6 @@
 import tw from "@/shared/utils/tailwind";
 
-export const StyledFooter = tw.footer`
+const Footer = tw.footer`
   bg-main-background
   flex
   h-44
@@ -8,3 +8,7 @@ export const StyledFooter = tw.footer`
   justify-center
   text-white
 `;
+
+export const SC = {
+  Footer,
+};
