@@ -5,6 +5,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { Montserrat } from "next/font/google";
 import { notFound } from "next/navigation";
+import { Toaster } from "react-hot-toast";
 import { SC } from "./layout.styles";
 
 const montserrat = Montserrat({
@@ -47,6 +48,7 @@ export default async function RootLayout({ children, params }: Props) {
     <html lang={locale} className="scroll-smooth">
       <SC.Body className={montserrat.className}>
         <NextIntlClientProvider messages={messages}>
+          <Toaster position="top-right" />
           {children}
         </NextIntlClientProvider>
       </SC.Body>
