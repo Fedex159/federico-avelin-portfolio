@@ -1,20 +1,21 @@
 "use client";
 
 import { Locale, usePathname, useRouter } from "@/i18n/routing";
-import { argFlag, usaFlag } from "@/public/assets";
-import Image from "next/image";
-import { useCallback, useMemo } from "react";
+import { useCallback, useMemo, useTransition } from "react";
 import { SC } from "./LanguageSelector.styles";
 
 export const LanguageSelector = () => {
   const router = useRouter();
   const pathname = usePathname();
+  const [isPending, startTransition] = useTransition();
 
   const handleClick = useCallback(
     ({ newLocale }: { newLocale: Locale }) => {
-      router.replace(`${pathname}${window.location.hash}` as never, {
-        locale: newLocale,
-        scroll: false,
+      startTransition(() => {
+        router.replace(`${pathname}${window.location.hash}` as never, {
+          locale: newLocale,
+          scroll: false,
+        });
       });
     },
     [pathname, router],
@@ -23,14 +24,14 @@ export const LanguageSelector = () => {
   const languageOptions = useMemo(
     () => [
       {
-        alt: "Español",
+        flagId: "Español",
+        isArgFlag: true,
         onClick: () => handleClick({ newLocale: "es" }),
-        src: argFlag,
       },
       {
-        alt: "English",
+        flagId: "English",
+        isArgFlag: false,
         onClick: () => handleClick({ newLocale: "en" }),
-        src: usaFlag,
       },
     ],
     [handleClick],
@@ -38,10 +39,13 @@ export const LanguageSelector = () => {
 
   return (
     <SC.Container>
-      {languageOptions.map(({ alt, onClick, src }, index) => (
-        <SC.FlagButton key={`${alt}-${index.toString()}`} onClick={onClick}>
-          <Image className="h-full" src={src} alt={alt} width={30} />
-        </SC.FlagButton>
+      {languageOptions.map(({ flagId, isArgFlag, onClick }, index) => (
+        <SC.FlagButton
+          disabled={isPending}
+          $isArgFlag={isArgFlag}
+          key={`${flagId}-${index.toString()}`}
+          onClick={onClick}
+        />
       ))}
     </SC.Container>
   );
