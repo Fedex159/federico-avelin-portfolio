@@ -2,6 +2,8 @@ import IconClose from "./iconClose.svg";
 import IconCss from "./iconCSS.svg";
 import IconDocker from "./iconDocker.svg";
 import IconExpress from "./iconExpress.svg";
+import IconFlagArg from "./iconFlagArg.svg";
+import IconFlagUsa from "./iconFlagUsa.svg";
 import IconGit from "./iconGit.svg";
 import IconGithub from "./iconGithub.svg";
 import IconGmail from "./iconGmail.svg";
@@ -31,6 +33,8 @@ export {
   IconCss,
   IconDocker,
   IconExpress,
+  IconFlagArg,
+  IconFlagUsa,
   IconGit,
   IconGithub,
   IconGmail,
