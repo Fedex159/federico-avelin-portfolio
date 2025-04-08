@@ -1,16 +1,11 @@
-import { sendContactForm } from "@/shared/actions/sendContactForm";
-import {
-  CommonSection,
-  CommonTitle,
-  SubmitContactFormButton,
-} from "@/shared/components";
+import { CommonSection, CommonTitle, ContactForm } from "@/shared/components";
 import { SectionIdEnum } from "@/shared/types/common";
+import { FormFieldsEnum } from "@/shared/types/contactForm";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { INFO_LIST } from "./constants";
 import { Classname, SC } from "./Contact.styles";
-import { FormFieldsEnum } from "@/shared/types/contactForm";
 
 export const Contact = () => {
   const t = useTranslations("contact");
@@ -38,7 +33,7 @@ export const Contact = () => {
           </SC.InfoItem>
         ))}
       </SC.InfoContainer>
-      <SC.Form action={sendContactForm}>
+      <ContactForm>
         <SC.Input
           maxLength={40}
           name={FormFieldsEnum.FULLNAME}
@@ -65,8 +60,7 @@ export const Contact = () => {
           required
           rows="5"
         />
-        <SubmitContactFormButton />
-      </SC.Form>
+      </ContactForm>
     </CommonSection>
   );
 };

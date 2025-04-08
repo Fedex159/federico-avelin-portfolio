@@ -4,3 +4,8 @@ export enum FormFieldsEnum {
   SUBJECT = "subject",
   MESSAGE = "message",
 }
+
+export type FormMessageState = {
+  status: "success" | "error" | null;
+  timestamp: number;
+};

@@ -1,6 +1,6 @@
 "use server";
 
-import { FormFieldsEnum } from "../types/contactForm";
+import { FormFieldsEnum, FormMessageState } from "../types/contactForm";
 
 const GoogleFormIds = {
   [FormFieldsEnum.FULLNAME]: process.env.GOOGLE_FORM_FULLNAME_ID,
@@ -11,7 +11,10 @@ const GoogleFormIds = {
 
 const GOOGLE_FORM_URL = process.env.GOOGLE_FORM_URL || "";
 
-export const sendContactForm = async (formData: FormData) => {
+export const sendContactForm = async (
+  _prevState: FormMessageState,
+  formData: FormData,
+): Promise<FormMessageState> => {
   const newFormData = new FormData();
 
   Object.values(FormFieldsEnum).filter((field) => {
@@ -29,8 +32,8 @@ export const sendContactForm = async (formData: FormData) => {
       body: newFormData,
     });
 
-    return { message: "success" };
+    return { status: "success", timestamp: Date.now() };
   } catch {
-    return { message: "error" };
+    return { status: "error", timestamp: Date.now() };
   }
 };

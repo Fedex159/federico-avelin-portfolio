@@ -51,17 +51,6 @@ const InfoItemLink = clsx`
   hover:underline
 `;
 
-const Form = tw.form`
-  group
-  flex
-  w-full
-  flex-col
-  items-center
-  gap-5
-  md:col-start-2
-  md:row-start-2
-`;
-
 const Input = tw.input`
   focus:outline-primary
   h-13
@@ -93,7 +82,6 @@ const TextArea = tw.textarea`
 export const SC = {
   InfoContainer,
   InfoItem,
-  Form,
   Input,
   TextArea,
 };

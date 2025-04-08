@@ -65,7 +65,15 @@
       "subject": "Subject*",
       "message": "Message*",
       "submit": "Submit",
-      "submitting": "Submitting..."
+      "submitting": "Submitting...",
+      "success": {
+        "title": "Successful",
+        "message": "Your message has been sent successfully."
+      },
+      "error": {
+        "title": "Error",
+        "message": "There was an error sending your message. Please try again later."
+      }
     }
   },
   "projects": {
