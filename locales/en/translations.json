@@ -64,7 +64,8 @@
       "email": "Email*",
       "subject": "Subject*",
       "message": "Message*",
-      "submit": "Submit"
+      "submit": "Submit",
+      "submitting": "Submitting..."
     }
   },
   "projects": {
