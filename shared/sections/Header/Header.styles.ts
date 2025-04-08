@@ -2,15 +2,15 @@ import { SectionIdEnum } from "@/shared/types/common";
 import tw, { clsx } from "@/shared/utils/tailwind";
 
 export const StyledHeader = tw.header`
+  bg-header-background
+  h-header-height
   sticky
   top-0
   z-10
   mx-auto
   flex
-  h-(--header-height)
   w-full
   items-center
-  bg-(--header-background)
   px-(--padding-inline)
   text-white
 `;
@@ -33,6 +33,7 @@ export const StyledHamburgerMenu = tw.label`
 `;
 
 export const StyledNav = tw.nav`
+  bg-header-background
   fixed
   top-20
   right-0
@@ -46,7 +47,6 @@ export const StyledNav = tw.nav`
   items-center
   justify-start
   gap-2.5
-  bg-(--header-background)
   transition-[translate]
   duration-300
   peer-checked:translate-x-0

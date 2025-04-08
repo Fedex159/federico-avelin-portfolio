@@ -15,11 +15,11 @@ export const aboutSectionClassname = clsx`
 `;
 
 export const aboutImageClassname = clsx`
+  shadow-about-image
   mx-auto
   h-96
   w-80
   object-cover
-  shadow-[-5px_-5px_var(--main-background),-13px_-13px_0px_-2px_var(--color-primary)]
   md:col-start-1
   md:col-end-1
   md:mt-2.5

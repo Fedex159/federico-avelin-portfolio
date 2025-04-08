@@ -68,11 +68,11 @@ export const StyledProjectSwapCardLabel = tw.label`
 `;
 
 const colMobileStyles = clsx`
+  bg-secondary-background
   col-start-1
   row-start-1
   border
   border-gray-500
-  bg-(--secondary-background)
   p-2.5
   transition-transform
   duration-500

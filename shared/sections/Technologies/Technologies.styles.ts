@@ -24,6 +24,8 @@ export const StyledTechContainer = tw.div`
 export const StyledItemsContainer = tw.div`
   nth-[4]:border-purple-tech
   nth-[4]:[&_h4]:text-purple-tech
+  bg-main-background
+  shadow-tech
   flex
   h-full
   max-w-96
@@ -32,10 +34,8 @@ export const StyledItemsContainer = tw.div`
   justify-between
   rounded-3xl
   border-2
-  bg-(--main-background)
   px-0
   py-2.5
-  shadow-(--box-shadow-tech)
   nth-[1]:border-amber-400
   nth-[2]:border-cyan-700
   nth-[3]:border-neutral-700

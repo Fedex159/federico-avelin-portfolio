@@ -7,7 +7,7 @@ export const StyledContainer = tw.div`
 `;
 
 export const StyledFlagButton = tw.button`
+  hover:shadow-button
   cursor-pointer
   transition-shadow
-  hover:shadow-(--box-shadow-button)
 `;
