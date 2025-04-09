@@ -18,7 +18,6 @@ const Title = clsx`
   md:col-start-1
   md:self-end
   md:text-center
-  [&&]:mb-5
 `;
 
 const InfoContainer = tw.ul`

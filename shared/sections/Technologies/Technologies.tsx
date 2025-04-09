@@ -13,7 +13,7 @@ export const Technologies = () => {
       className={Classname.Section}
       id={SectionIdEnum.TECHNOLOGIES}
     >
-      <CommonTitle className={Classname.Title}>{t("title")}</CommonTitle>
+      <CommonTitle>{t("title")}</CommonTitle>
       <SC.Container>
         {TECHNOLOGIES_LIST.map(({ categoryTranslationKey, items }) => {
           return (

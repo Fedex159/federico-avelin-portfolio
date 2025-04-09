@@ -6,10 +6,6 @@ const Section = clsx`
   items-center
 `;
 
-const Title = clsx`
-  mt-20
-`;
-
 const ContainerMobileStyles = clsx`
   mb-5
   max-w-[400px]
@@ -147,7 +143,6 @@ const ProjectImage = clsx`
 
 export const Classname = {
   Section,
-  Title,
   ProjectImage,
 };
 

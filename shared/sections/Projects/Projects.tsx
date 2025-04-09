@@ -11,7 +11,7 @@ export const Projects = () => {
 
   return (
     <CommonSection className={Classname.Section} id={SectionIdEnum.PROJECTS}>
-      <CommonTitle className={Classname.Title}>{t("title")}</CommonTitle>
+      <CommonTitle>{t("title")}</CommonTitle>
       {PROJECTS_LIST.map(
         ({
           descriptionTranslationKey,

@@ -5,11 +5,7 @@ const Section = clsx`
   flex-col
   items-center
   justify-center
-`;
-
-const Title = clsx`
-  mt-0
-  [&&]:mb-7
+  gap-10
 `;
 
 const Container = tw.div`
@@ -86,5 +82,4 @@ export const SC = {
 
 export const Classname = {
   Section,
-  Title,
 };
