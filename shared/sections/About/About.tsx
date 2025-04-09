@@ -24,7 +24,7 @@ export const About = ({ locale }: Props) => {
   return (
     <CommonSection className={Classname.Section} id={SectionIdEnum.ABOUT}>
       <Image className={Classname.Image} src={about} alt="developer-coding" />
-      <CommonTitle>{t("title")}</CommonTitle>
+      <CommonTitle className={Classname.Title}>{t("title")}</CommonTitle>
       <SC.Description>{t("description", { years: YEARS })}</SC.Description>
       <Link href={cvUrl} className={Classname.DownloadButton} target="_blank">
         {t("downloadCv")}

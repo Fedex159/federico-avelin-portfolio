@@ -6,12 +6,12 @@ const Section = clsx`
   grid-cols-[1fr_auto_1fr]
   items-center
   gap-y-10
-  *:col-start-2
-  *:col-end-2
+  not-md:*:col-start-2
+  not-md:*:col-end-2
   md:grid-cols-2
+  md:grid-rows-[repeat(3,min-content)]
   md:content-center
   md:gap-x-10
-  md:*:row-start-1
 `;
 
 const Image = clsx`
@@ -20,21 +20,28 @@ const Image = clsx`
   h-96
   w-80
   object-cover
-  md:col-start-1
-  md:col-end-1
-  md:mt-2.5
-  lg:scale-150
+  md:row-span-3
+  lg:h-[576px]
+  lg:w-[480px]
+`;
+
+const Title = clsx`
+  self-end
+  [&&]:mt-0
 `;
 
 const Description = tw.p`
   max-w-[400px]
   whitespace-pre-line
-  md:my-24
+  md:col-start-2
+  md:row-start-2
 `;
 
 const DownloadButton = clsx`
   ${mixinButton}
-  md:mt-auto
+  md:col-start-2
+  md:row-start-3
+  md:self-start
 `;
 
 export const SC = {
@@ -44,5 +51,6 @@ export const SC = {
 export const Classname = {
   Section,
   Image,
+  Title,
   DownloadButton,
 };
