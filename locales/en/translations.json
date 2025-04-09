@@ -66,6 +66,11 @@
       "message": "Message*",
       "submit": "Submit",
       "submitting": "Submitting...",
+      "validation": {
+        "required": "Required*",
+        "email": "Invalid email format",
+        "min": "Minimum {min} characters"
+      },
       "success": {
         "title": "Successful",
         "message": "Your message has been sent successfully."

@@ -1,4 +1,10 @@
-import { CommonSection, CommonTitle, ContactForm } from "@/shared/components";
+import {
+  CommonSection,
+  CommonTitle,
+  ContactForm,
+  ContactInput,
+  ContactRequiredMessage,
+} from "@/shared/components";
 import { SectionIdEnum } from "@/shared/types/common";
 import { FormFieldsEnum } from "@/shared/types/contactForm";
 import { useTranslations } from "next-intl";
@@ -6,6 +12,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { INFO_LIST } from "./constants";
 import { Classname, SC } from "./Contact.styles";
+
+const MIN_TEXT_AREA_LENGTH = 30;
 
 export const Contact = () => {
   const t = useTranslations("contact");
@@ -34,32 +42,28 @@ export const Contact = () => {
         ))}
       </SC.InfoContainer>
       <ContactForm>
-        <SC.Input
-          maxLength={40}
-          name={FormFieldsEnum.FULLNAME}
-          placeholder={t("form.fullName")}
-          required
-        />
-        <SC.Input
+        <ContactInput fieldName={FormFieldsEnum.FULLNAME} maxLength={40} />
+        <ContactInput
+          fieldName={FormFieldsEnum.EMAIL}
           maxLength={100}
-          name={FormFieldsEnum.EMAIL}
-          placeholder={t("form.email")}
-          required
           type="email"
-        />
-        <SC.Input
-          maxLength={80}
-          name={FormFieldsEnum.SUBJECT}
-          placeholder={t("form.subject")}
-          required
-        />
+        >
+          <SC.EmailInvalidFormatMessage>
+            {t("form.validation.email")}
+          </SC.EmailInvalidFormatMessage>
+        </ContactInput>
+        <ContactInput fieldName={FormFieldsEnum.SUBJECT} maxLength={80} />
         <SC.TextArea
-          minLength={30}
+          minLength={MIN_TEXT_AREA_LENGTH}
           name={FormFieldsEnum.MESSAGE}
           placeholder={t("form.message")}
           required
           rows="5"
         />
+        <ContactRequiredMessage formField={FormFieldsEnum.MESSAGE} />
+        <SC.TextAreaRequiredMinMessage>
+          {t("form.validation.min", { min: MIN_TEXT_AREA_LENGTH })}
+        </SC.TextAreaRequiredMinMessage>
       </ContactForm>
     </CommonSection>
   );

@@ -1,3 +1,4 @@
+import { mixinError } from "@/shared/styles/mixins";
 import tw, { clsx } from "@/shared/utils/tailwind";
 
 const Section = clsx`
@@ -50,22 +51,9 @@ const InfoItemLink = clsx`
   hover:underline
 `;
 
-const Input = tw.input`
-  focus:outline-primary
-  h-13
-  w-full
-  rounded-md
-  border-[1px]
-  border-white
-  px-5
-  py-2.5
-  focus:border-transparent
-  focus:outline-1
-  not-valid:focus:outline-red-500
-`;
-
 const TextArea = tw.textarea`
   focus:outline-primary
+  peer/message
   w-full
   resize-y
   rounded-md
@@ -73,16 +61,28 @@ const TextArea = tw.textarea`
   border-white
   px-5
   py-2.5
+  not-valid:not-placeholder-shown:not-focus:border-red-500
   focus:border-transparent
   focus:outline-1
   not-valid:focus:outline-red-500
 `;
 
+const TextAreaRequiredMinMessage = tw.p`
+  ${() => mixinError}
+  peer-not-placeholder-shown/message:peer-focus/message:peer-invalid/message:block
+`;
+
+const EmailInvalidFormatMessage = tw.p`
+  ${() => mixinError}
+  peer-not-placeholder-shown/email:peer-focus/email:peer-invalid/email:block
+`;
+
 export const SC = {
   InfoContainer,
   InfoItem,
-  Input,
+  EmailInvalidFormatMessage,
   TextArea,
+  TextAreaRequiredMinMessage,
 };
 
 export const Classname = {

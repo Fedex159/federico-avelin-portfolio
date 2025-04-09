@@ -13,3 +13,11 @@ export const mixinButton = clsx`
   text-black
   transition-shadow
 `;
+
+export const mixinError = clsx`
+  -mt-2
+  mr-auto
+  hidden
+  font-semibold
+  text-red-500
+`;
