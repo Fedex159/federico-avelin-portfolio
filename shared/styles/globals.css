@@ -28,4 +28,7 @@
     var(--max-content-width),
     var(--max-content-width)
   );
+
+  /* Animations */
+  --float-label: scale(0.75) translateX(-25%) translateY(-36px);
 }
