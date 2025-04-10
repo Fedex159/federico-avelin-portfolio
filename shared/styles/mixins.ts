@@ -15,7 +15,6 @@ export const mixinButton = clsx`
 `;
 
 export const mixinError = clsx`
-  -mt-2
   mr-auto
   hidden
   font-semibold
