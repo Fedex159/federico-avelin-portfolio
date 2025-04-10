@@ -20,11 +20,12 @@ const Input = tw.input`
   h-13
   w-full
   rounded-md
-  border-[1px]
+  border
   border-white
   px-5
   py-2.5
   not-valid:not-placeholder-shown:not-focus:border-red-500
+  placeholder:opacity-0
   focus:border-transparent
   focus:outline-1
   not-valid:focus:outline-red-500

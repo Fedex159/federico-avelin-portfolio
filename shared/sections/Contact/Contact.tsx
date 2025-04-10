@@ -3,7 +3,7 @@ import {
   CommonTitle,
   ContactForm,
   ContactInput,
-  ContactRequiredMessage,
+  ContactTextArea,
 } from "@/shared/components";
 import { SectionIdEnum } from "@/shared/types/common";
 import { FormFieldsEnum } from "@/shared/types/contactForm";
@@ -53,17 +53,10 @@ export const Contact = () => {
           </SC.EmailInvalidFormatMessage>
         </ContactInput>
         <ContactInput fieldName={FormFieldsEnum.SUBJECT} maxLength={80} />
-        <SC.TextArea
+        <ContactTextArea
+          fieldName={FormFieldsEnum.MESSAGE}
           minLength={MIN_TEXT_AREA_LENGTH}
-          name={FormFieldsEnum.MESSAGE}
-          placeholder={t("form.message")}
-          required
-          rows="5"
         />
-        <ContactRequiredMessage formField={FormFieldsEnum.MESSAGE} />
-        <SC.TextAreaRequiredMinMessage>
-          {t("form.validation.min", { min: MIN_TEXT_AREA_LENGTH })}
-        </SC.TextAreaRequiredMinMessage>
       </ContactForm>
     </CommonSection>
   );

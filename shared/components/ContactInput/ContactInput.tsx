@@ -1,9 +1,10 @@
-import { useTranslations } from "next-intl";
-import { ComponentProps } from "react";
-import { Classname, InputFieldName, SC } from "./ContactInput.styles";
 import { FormFieldsEnum } from "@/shared/types/contactForm";
 import { Translations } from "@/shared/types/translations";
+import { useTranslations } from "next-intl";
+import { ComponentProps } from "react";
 import { ContactRequiredMessage } from "../ContactRequiredMessage/ContactRequiredMessage";
+import { FloatLabel } from "../FloatLabel/FloatLabel";
+import { Classname, InputFieldName, SC } from "./ContactInput.styles";
 
 type Props = {
   fieldName: InputFieldName;
@@ -21,18 +22,28 @@ const PLACEHOLDER_CONFIG: Record<
 export const ContactInput = ({ fieldName, children, ...props }: Props) => {
   const t = useTranslations("contact.form");
   const placeholderTranslationKey = PLACEHOLDER_CONFIG[fieldName];
+  const placeholder = t(placeholderTranslationKey);
 
   return (
-    <>
-      <SC.Input
-        className={Classname.InputPeer(fieldName)}
-        name={fieldName}
-        placeholder={t(placeholderTranslationKey)}
-        required
-        {...props}
-      />
-      <ContactRequiredMessage formField={fieldName} />
-      {children}
-    </>
+    <FloatLabel
+      errorMessage={
+        <>
+          <ContactRequiredMessage formField={fieldName} />
+          {children}
+        </>
+      }
+      fieldName={fieldName}
+      input={
+        <SC.Input
+          className={Classname.InputPeer(fieldName)}
+          id={fieldName}
+          name={fieldName}
+          placeholder={placeholder}
+          required
+          {...props}
+        />
+      }
+      placeholder={placeholder}
+    />
   );
 };
