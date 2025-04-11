@@ -1,4 +1,4 @@
-import { about } from "@/public/assets";
+import { ImageAbout } from "@/public/assets";
 import { CommonSection, CommonTitle } from "@/shared/components";
 import { SectionIdEnum } from "@/shared/types/common";
 import { useTranslations } from "next-intl";
@@ -23,7 +23,11 @@ export const About = ({ locale }: Props) => {
 
   return (
     <CommonSection className={Classname.Section} id={SectionIdEnum.ABOUT}>
-      <Image className={Classname.Image} src={about} alt="developer-coding" />
+      <Image
+        className={Classname.Image}
+        src={ImageAbout}
+        alt="developer-coding"
+      />
       <CommonTitle className={Classname.Title}>{t("title")}</CommonTitle>
       <SC.Description>{t("description", { years: YEARS })}</SC.Description>
       <Link href={cvUrl} className={Classname.DownloadButton} target="_blank">

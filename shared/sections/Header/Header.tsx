@@ -1,5 +1,5 @@
 import { Link } from "@/i18n/routing";
-import { logo } from "@/public/assets";
+import { ImageLogo } from "@/public/assets";
 import { HamburgerCheckbox, LanguageSelector } from "@/shared/components";
 import { SectionIdEnum } from "@/shared/types/common";
 import { Translations } from "@/shared/types/translations";
@@ -41,7 +41,7 @@ export const Header = () => {
   return (
     <SC.Header>
       <Link href={`#${NAV_LINKS[0].sectionId}`}>
-        <Image src={logo} alt="logo" width={87} />
+        <Image src={ImageLogo} alt="logo" width={87} />
       </Link>
       <SC.HamburgerMenu htmlFor="hamburger-menu" />
       <HamburgerCheckbox id="hamburger-menu" aria-label="hamburger-menu" />

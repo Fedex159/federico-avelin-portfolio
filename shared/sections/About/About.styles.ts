@@ -19,7 +19,8 @@ const Image = clsx`
   mx-auto
   h-96
   w-80
-  object-cover
+  bg-[#f5be41]
+  object-contain
   md:row-span-3
   lg:h-[576px]
   lg:w-[480px]
