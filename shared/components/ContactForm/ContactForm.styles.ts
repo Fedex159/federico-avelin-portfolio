@@ -15,9 +15,9 @@ const Form = tw.form`
 const SubmitButton = tw.button`
   ${() => mixinButton}
   group-invalid:cursor-not-allowed
-  group-invalid:opacity-20
+  group-invalid:opacity-55
   disabled:cursor-not-allowed
-  disabled:opacity-25
+  disabled:opacity-55
 `;
 
 export const SC = {
