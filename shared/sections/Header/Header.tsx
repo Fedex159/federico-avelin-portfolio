@@ -44,7 +44,7 @@ export const Header = () => {
         <Image src={logo} alt="logo" width={87} />
       </Link>
       <SC.HamburgerMenu htmlFor="hamburger-menu" />
-      <HamburgerCheckbox id="hamburger-menu" />
+      <HamburgerCheckbox id="hamburger-menu" aria-label="hamburger-menu" />
       <SC.Nav>
         {NAV_LINKS.map(({ sectionId, translationKey }, index) => (
           <Link

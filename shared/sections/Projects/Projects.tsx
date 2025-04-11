@@ -27,6 +27,7 @@ export const Projects = () => {
               <SC.ProjectSwapCardCheckbox
                 id={titleTranslationKey}
                 type="checkbox"
+                aria-label={titleTranslationKey}
               />
               <SC.ProjectSwapCardLabel htmlFor={titleTranslationKey} />
               <SC.ProjectColInfo>

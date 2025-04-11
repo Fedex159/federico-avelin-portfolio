@@ -41,6 +41,7 @@ export const LanguageSelector = () => {
     <SC.Container>
       {languageOptions.map(({ flagId, isArgFlag, onClick }, index) => (
         <SC.FlagButton
+          aria-label={flagId}
           disabled={isPending}
           $isArgFlag={isArgFlag}
           key={`${flagId}-${index.toString()}`}
