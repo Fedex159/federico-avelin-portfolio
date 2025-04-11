@@ -104,6 +104,7 @@ const ProjectColInfo = tw.div`
   grid-cols-2
   grid-rows-[auto_1fr_auto]
   gap-y-5
+  not-md:rounded-2xl
 `;
 
 const ColImageMobileStyles = clsx`
@@ -117,10 +118,12 @@ const ProjectColImage = tw.div`
   flex
   items-center
   justify-center
+  not-md:border-0
+  not-md:p-0
   group-odd/tech:col-start-1
   group-odd/tech:row-start-1
-  group-odd/tech:border-r
-  group-odd/tech:border-gray-500
+  md:group-odd/tech:border-r
+  md:group-odd/tech:border-gray-500
 `;
 
 const ProjectTitle = tw.h4`
@@ -138,7 +141,10 @@ const ProjectDescription = tw.p`
 `;
 
 const ProjectImage = clsx`
+  h-full
+  w-full
   rounded-2xl
+  object-cover
 `;
 
 export const Classname = {
