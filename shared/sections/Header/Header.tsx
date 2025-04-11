@@ -1,6 +1,10 @@
 import { Link } from "@/i18n/routing";
 import { ImageLogo } from "@/public/assets";
-import { HamburgerCheckbox, LanguageSelector } from "@/shared/components";
+import {
+  HamburgerCheckbox,
+  LanguageSelector,
+  ProgressBar,
+} from "@/shared/components";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { getNavLinkClassname, SC } from "./Header.styles";
@@ -28,6 +32,7 @@ export const Header = () => {
         ))}
         <LanguageSelector />
       </SC.Nav>
+      <ProgressBar />
     </SC.Header>
   );
 };
