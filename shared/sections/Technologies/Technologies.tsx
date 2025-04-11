@@ -27,7 +27,7 @@ export const Technologies = () => {
 
                   return (
                     <SC.Item key={translationKey}>
-                      <Image src={icon} alt={techName} height={50} />
+                      <Image src={icon} alt={`icon-${techName}`} height={50} />
                       <SC.ItemTechName>{techName}</SC.ItemTechName>
                     </SC.Item>
                   );
