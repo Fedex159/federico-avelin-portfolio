@@ -17,6 +17,7 @@ const InputPeer = (formField: InputFieldName) =>
 
 const Input = tw.input`
   focus:outline-primary
+  z-10
   h-13
   w-full
   rounded-md

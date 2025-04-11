@@ -4,6 +4,7 @@ import tw from "@/shared/utils/tailwind";
 const TextArea = tw.textarea`
   focus:outline-primary
   peer/message
+  z-10
   w-full
   resize-y
   rounded-md
