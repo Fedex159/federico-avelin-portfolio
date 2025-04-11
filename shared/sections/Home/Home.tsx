@@ -13,9 +13,10 @@ export const Home = () => {
   return (
     <CommonSection className={Classname.Section} id={SectionIdEnum.HOME}>
       <Image
-        className={Classname.Image}
-        src={ImageProfile}
         alt="profile-user-image"
+        className={Classname.Image}
+        priority
+        src={ImageProfile}
       />
       <SC.Content>
         <SC.Title>{t("title")}</SC.Title>
