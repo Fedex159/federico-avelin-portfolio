@@ -1,5 +1,5 @@
 import { Link } from "@/i18n/routing";
-import { profileImage } from "@/public/assets";
+import { ImageProfile } from "@/public/assets";
 import { CommonSection } from "@/shared/components";
 import { mixinButton } from "@/shared/styles/mixins";
 import { SectionIdEnum } from "@/shared/types/common";
@@ -14,7 +14,7 @@ export const Home = () => {
     <CommonSection className={Classname.Section} id={SectionIdEnum.HOME}>
       <Image
         className={Classname.Image}
-        src={profileImage}
+        src={ImageProfile}
         alt="profile-user-image"
       />
       <SC.Content>
