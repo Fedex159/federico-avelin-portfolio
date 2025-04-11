@@ -56,8 +56,9 @@ const Nav = tw.nav`
   md:max-w-full
   md:translate-x-0!
   md:flex-row
-  md:gap-10
+  md:gap-5
   md:bg-transparent
+  lg:gap-10
 `;
 
 const activeSectionClasses: Record<SectionIdEnum, string> = {
@@ -65,6 +66,8 @@ const activeSectionClasses: Record<SectionIdEnum, string> = {
     "group-[[data-active-section=home]]:text-primary group-[[data-active-section=home]]:font-bold",
   [SectionIdEnum.ABOUT]:
     "group-[[data-active-section=about]]:text-primary group-[[data-active-section=about]]:font-bold",
+  [SectionIdEnum.EXPERIENCE]:
+    "group-[[data-active-section=experience]]:text-primary group-[[data-active-section=experience]]:font-bold",
   [SectionIdEnum.TECHNOLOGIES]:
     "group-[[data-active-section=technologies]]:text-primary group-[[data-active-section=technologies]]:font-bold",
   [SectionIdEnum.PROJECTS]:

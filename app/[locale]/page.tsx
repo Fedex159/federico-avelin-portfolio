@@ -2,6 +2,7 @@ import { ActiveSectionStoreProvider } from "@/shared/providers/active-section-st
 import {
   About,
   Contact,
+  Experience,
   Footer,
   Header,
   Home,
@@ -27,6 +28,7 @@ export default async function Page({ params }: Props) {
         <SC.Main>
           <Home />
           <About locale={locale} />
+          <Experience />
           <Technologies />
           <Projects />
           <Contact />

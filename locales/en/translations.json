@@ -3,6 +3,7 @@
     "navlinks": {
       "home": "Home",
       "about": "About",
+      "experience": "Experience",
       "technologies": "Technologies",
       "projects": "Projects",
       "contact": "Contact"
@@ -18,6 +19,41 @@
     "title": "About Me",
     "description": "Hi! I'm Federico, a full-stack web developer with {years} years of experience dedicated to building incredible web experiences.\n\nI love transforming ideas into digital reality, paying special attention to code quality and usability. I work comfortably with HTML, CSS, TypeScript, React, Next.js, and Tailwind CSS, and I really enjoy discovering and using new tools that improve my work.\n\nIf you have a project in mind, I'd love to chat and see how I can help you bring it to life!",
     "downloadCv": "Download CV"
+  },
+  "experience": {
+    "title": "Experience",
+    "items": {
+      "generator": {
+        "company": "Litebox",
+        "position": "@ Frontend Developer",
+        "description": "I updated an internal utility for generating Frontend and Backend projects. New scripts and configurations were added to enable automatic dependency updates, using the latest recommended ESLint configurations and simplifying the tool's usage with npx.",
+        "time": "Apr. 2025"
+      },
+      "stellar": {
+        "company": "Litebox",
+        "position": "@ Frontend Developer",
+        "description": "I implemented offline support in the application for marina administrators, allowing access to key functionalities without an internet connection and improving the user experience in situations with limited connectivity. I also configured the application to be used as a PWA and installed on mobile devices thanks to PWABuilder. For this, technologies such as Tanstack Query were used for offline mutation management, Service Workers for resource caching, and React and Next.js for the Frontend.",
+        "time": "Mar. 2024 - Apr. 2025"
+      },
+      "molo": {
+        "company": "Litebox",
+        "position": "@ Frontend Developer",
+        "description": "I optimized application performance in sections with extensive forms (more than 50 fields) by using React Hook Forms and custom validations, which improved data collection efficiency. Additionally, infinite tables were optimized by implementing virtualization and scroll pagination techniques for better performance. Tanstack Virtual and Tanstack Query were used.",
+        "time": "Jun. 2022 - Feb. 2024"
+      },
+      "sofia": {
+        "company": "Litebox",
+        "position": "@ Full Stack Developer",
+        "description": "I developed the integration of Algolia for product search, significantly improving the user experience by enabling fast and efficient searches for one of the leading e-commerce companies in Bolivia. Technologies used: Express, React, SQL, MySQL, Next.js, GraphQL.",
+        "time": "Mar. - May 2022"
+      },
+      "liteboxWebsite": {
+        "company": "Litebox",
+        "position": "@ Frontend Developer",
+        "description": "I developed a complex carousel with Vue.js and CSS, facing challenges in animations and UI/UX requirements. After analyzing various libraries, Splide.js was implemented, significantly customizing it with CSS to meet design and user experience specifications, achieving fluid animations and custom behavior.",
+        "time": "Feb. 2022"
+      }
+    }
   },
   "technologies": {
     "title": "Technologies",

@@ -1,39 +1,10 @@
 import { Link } from "@/i18n/routing";
 import { ImageLogo } from "@/public/assets";
 import { HamburgerCheckbox, LanguageSelector } from "@/shared/components";
-import { SectionIdEnum } from "@/shared/types/common";
-import { Translations } from "@/shared/types/translations";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { getNavLinkClassname, SC } from "./Header.styles";
-
-type NavLinks = Array<{
-  sectionId: SectionIdEnum;
-  translationKey: Translations<"header">;
-}>;
-
-const NAV_LINKS: NavLinks = [
-  {
-    sectionId: SectionIdEnum.HOME,
-    translationKey: "navlinks.home",
-  },
-  {
-    sectionId: SectionIdEnum.ABOUT,
-    translationKey: "navlinks.about",
-  },
-  {
-    sectionId: SectionIdEnum.TECHNOLOGIES,
-    translationKey: "navlinks.technologies",
-  },
-  {
-    sectionId: SectionIdEnum.PROJECTS,
-    translationKey: "navlinks.projects",
-  },
-  {
-    sectionId: SectionIdEnum.CONTACT,
-    translationKey: "navlinks.contact",
-  },
-];
+import { NAV_LINKS } from "./constants";
 
 export const Header = () => {
   const t = useTranslations("header");
