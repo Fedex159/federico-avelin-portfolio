@@ -25,10 +25,10 @@ const HamburgerMenu = tw.label`
   w-10
   -translate-y-1/2
   cursor-pointer
-  bg-[url('/assets/hamburger.png')]
-  bg-contain
-  bg-[40px]
-  bg-repeat-x
+  bg-[url('/assets/icons/iconHamburger.svg')]
+  bg-cover
+  bg-center
+  bg-no-repeat
   md:hidden
 `;
 

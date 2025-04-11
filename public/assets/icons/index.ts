@@ -7,6 +7,7 @@ import IconFlagUsa from "./iconFlagUsa.svg";
 import IconGit from "./iconGit.svg";
 import IconGithub from "./iconGithub.svg";
 import IconGmail from "./iconGmail.svg";
+import IconHamburger from "./iconHamburger.svg";
 import IconHTML from "./iconHTML.svg";
 import IconJavascript from "./iconJavascript.svg";
 import IconLink from "./iconLink.svg";
@@ -38,6 +39,7 @@ export {
   IconGit,
   IconGithub,
   IconGmail,
+  IconHamburger,
   IconHTML,
   IconJavascript,
   IconLink,
