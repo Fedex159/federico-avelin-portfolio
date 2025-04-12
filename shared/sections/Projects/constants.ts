@@ -15,6 +15,7 @@ type ProjectsList = {
   repositoryUrl: string;
   titleTranslationKey: Translations<"projects">;
   websiteUrl: string;
+  hideProject?: boolean;
 }[];
 
 export const PROJECTS_LIST: ProjectsList = [
@@ -52,6 +53,7 @@ export const PROJECTS_LIST: ProjectsList = [
     repositoryUrl: "https://github.com/Fedex159/federico-avelin-portfolio",
     titleTranslationKey: "items.porfolio.title",
     websiteUrl: "https://federico-avelin-portfolio.vercel.app/",
+    hideProject: true,
   },
   {
     descriptionTranslationKey: "items.liteflix.description",
@@ -60,4 +62,4 @@ export const PROJECTS_LIST: ProjectsList = [
     titleTranslationKey: "items.liteflix.title",
     websiteUrl: "https://liteflix-challenge-five.vercel.app/",
   },
-];
+].filter((project) => !project.hideProject) as ProjectsList;
