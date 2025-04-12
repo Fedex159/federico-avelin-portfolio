@@ -26,7 +26,7 @@
       "generator": {
         "company": "Litebox",
         "position": "@ Frontend Developer",
-        "description": "I updated an internal utility for generating Frontend and Backend projects. New scripts and configurations were added to enable automatic dependency updates, using the latest recommended ESLint configurations and simplifying the tool's usage with npx.",
+        "description": "I updated an internal utility for generating Frontend and Backend projects, built with Yeoman Generator. New scripts and configurations were added that enable automatic dependency updates, using the latest recommended ESLint configurations and significantly simplifying its installation by requiring only the use of npx. A key contribution was the creation of comprehensive technical documentation on how to use the tool and the procedures for updating the scripts, which was not previously available. The team provided positive feedback on the improvement and clarity of the documentation, which facilitated the adoption and use of the utility.",
         "time": "Apr. 2025"
       },
       "stellar": {
@@ -38,13 +38,13 @@
       "molo": {
         "company": "Litebox",
         "position": "@ Frontend Developer",
-        "description": "I optimized application performance in sections with extensive forms (more than 50 fields) by using React Hook Forms and custom validations, which improved data collection efficiency. Additionally, infinite tables were optimized by implementing virtualization and scroll pagination techniques for better performance. Tanstack Virtual and Tanstack Query were used.",
+        "description": "I optimized the application's performance in sections with extensive forms (more than 50 fields) by using Formik and custom validations. Despite the limitations found in Formik and the time constraints that prevented migration to a more modern library like React Hook Form, which simplified and optimized the user experience when completing forms. Furthermore, infinite tables were optimized by implementing virtualization and scroll pagination techniques for better performance. Tanstack Virtual, Tanstack Query, and Tanstack Table were used.",
         "time": "Jun. 2022 - Feb. 2024"
       },
       "sofia": {
         "company": "Litebox",
         "position": "@ Full Stack Developer",
-        "description": "I developed the integration of Algolia for product search, significantly improving the user experience by enabling fast and efficient searches for one of the leading e-commerce companies in Bolivia. Technologies used: Express, React, SQL, MySQL, Next.js, GraphQL.",
+        "description": "I developed the Algolia integration for product search, significantly improving the user experience by enabling fast and efficient searches for one of the leading e-commerce companies in Bolivia. To ensure real-time synchronization of stock and product information in Algolia, a solution based on the configuration of cron jobs was implemented. Additionally, I participated in the development of the guest checkout functionality, allowing users to complete their purchases quickly and easily without needing to create an account. Technologies used: Express, React, SQL, MySQL, Next.js, GraphQL.",
         "time": "Mar. - May 2022"
       },
       "liteboxWebsite": {
