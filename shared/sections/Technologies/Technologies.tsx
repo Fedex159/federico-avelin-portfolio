@@ -17,16 +17,16 @@ export const Technologies = () => {
       <SC.TechContainer>
         {TECHNOLOGIES_LIST.map(({ icon, translationKey }) => (
           <SC.TechItem key={translationKey} title={t(translationKey)}>
-            <SC.ItemFace />
-            <SC.ItemFace />
-            <SC.ItemFace>
+            <SC.ItemFaceOne />
+            <SC.ItemFaceTwo />
+            <SC.ItemFaceThird>
               <Image
                 className={Classname.TechImage}
                 src={icon}
                 alt={`icon-${translationKey}`}
               />
-            </SC.ItemFace>
-            <SC.ItemFace />
+            </SC.ItemFaceThird>
+            <SC.ItemFaceFour />
           </SC.TechItem>
         ))}
       </SC.TechContainer>
