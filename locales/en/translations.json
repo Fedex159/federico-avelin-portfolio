@@ -57,12 +57,6 @@
   },
   "technologies": {
     "title": "Technologies",
-    "categories": {
-      "coreWeb": "Core Web & Styling",
-      "javascriptEcosystem": "Javascript Ecosystem & Libraries",
-      "backend": "Backend & Fullstack",
-      "tools": "Development Tools & Environment"
-    },
     "icons": {
       "css": "CSS",
       "docker": "Docker",

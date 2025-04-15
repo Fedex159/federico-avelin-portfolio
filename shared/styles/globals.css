@@ -6,12 +6,9 @@
   --color-secondary-background: #262626;
   --color-header-background: #212121b3;
   --color-primary: #f6f200;
-  --color-purple-tech: oklch(65.38690620506542% 0.165 289.4991345075651);
 
   /* Shadows */
   --shadow-button: 0px 0px 5px 2px var(--color-primary);
-  --shadow-tech:
-    8px 8px 0px var(--color-neutral-700), 2px 8px 0px var(--color-neutral-700);
   --shadow-project-link: 0px 0px 5px 2px var(--color-white);
   --shadow-about-image:
     -5px -5px var(--color-main-background),

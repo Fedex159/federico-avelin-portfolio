@@ -24,112 +24,89 @@ import { Translations } from "@/shared/types/translations";
 import { StaticImageData } from "next/image";
 
 type TechnologiesList = {
-  categoryTranslationKey: Translations<"technologies">;
-  items: {
-    icon: string | StaticImageData;
-    translationKey: Translations<"technologies">;
-  }[];
+  icon: string | StaticImageData;
+  translationKey: Translations<"technologies">;
 }[];
 
 export const TECHNOLOGIES_LIST: TechnologiesList = [
   {
-    categoryTranslationKey: "categories.coreWeb",
-    items: [
-      {
-        icon: IconCss,
-        translationKey: "icons.css",
-      },
-      {
-        icon: IconTailwind,
-        translationKey: "icons.tailwind",
-      },
-      {
-        icon: IconHTML,
-        translationKey: "icons.html",
-      },
-      {
-        icon: IconMaterialUI,
-        translationKey: "icons.materialUI",
-      },
-      {
-        icon: IconStyledComponents,
-        translationKey: "icons.styledComponents",
-      },
-    ],
+    icon: IconCss,
+    translationKey: "icons.css",
   },
   {
-    categoryTranslationKey: "categories.javascriptEcosystem",
-    items: [
-      {
-        icon: IconJavascript,
-        translationKey: "icons.javascript",
-      },
-      {
-        icon: IconTypescript,
-        translationKey: "icons.typescript",
-      },
-      {
-        icon: IconReact,
-        translationKey: "icons.react",
-      },
-      {
-        icon: IconReactHookForm,
-        translationKey: "icons.reactHookForm",
-      },
-      {
-        icon: IconTanstack,
-        translationKey: "icons.tanstack",
-      },
-    ],
+    icon: IconTailwind,
+    translationKey: "icons.tailwind",
   },
   {
-    categoryTranslationKey: "categories.backend",
-    items: [
-      {
-        icon: IconExpress,
-        translationKey: "icons.express",
-      },
-      {
-        icon: IconNodeJs,
-        translationKey: "icons.node",
-      },
-      {
-        icon: IconNextjs,
-        translationKey: "icons.nextjs",
-      },
-      {
-        icon: IconPostgresql,
-        translationKey: "icons.postgresql",
-      },
-      {
-        icon: IconDocker,
-        translationKey: "icons.docker",
-      },
-    ],
+    icon: IconHTML,
+    translationKey: "icons.html",
   },
   {
-    categoryTranslationKey: "categories.tools",
-    items: [
-      {
-        icon: IconGit,
-        translationKey: "icons.git",
-      },
-      {
-        icon: IconLinux,
-        translationKey: "icons.linux",
-      },
-      {
-        icon: IconVite,
-        translationKey: "icons.vite",
-      },
-      {
-        icon: IconPwa,
-        translationKey: "icons.pwa",
-      },
-      {
-        icon: IconNpm,
-        translationKey: "icons.npm",
-      },
-    ],
+    icon: IconMaterialUI,
+    translationKey: "icons.materialUI",
+  },
+  {
+    icon: IconStyledComponents,
+    translationKey: "icons.styledComponents",
+  },
+  {
+    icon: IconJavascript,
+    translationKey: "icons.javascript",
+  },
+  {
+    icon: IconTypescript,
+    translationKey: "icons.typescript",
+  },
+  {
+    icon: IconReact,
+    translationKey: "icons.react",
+  },
+  {
+    icon: IconReactHookForm,
+    translationKey: "icons.reactHookForm",
+  },
+  {
+    icon: IconTanstack,
+    translationKey: "icons.tanstack",
+  },
+  {
+    icon: IconExpress,
+    translationKey: "icons.express",
+  },
+  {
+    icon: IconNodeJs,
+    translationKey: "icons.node",
+  },
+  {
+    icon: IconNextjs,
+    translationKey: "icons.nextjs",
+  },
+  {
+    icon: IconPostgresql,
+    translationKey: "icons.postgresql",
+  },
+  {
+    icon: IconDocker,
+    translationKey: "icons.docker",
+  },
+  {
+    icon: IconGit,
+    translationKey: "icons.git",
+  },
+  {
+    icon: IconLinux,
+    translationKey: "icons.linux",
+  },
+  {
+    icon: IconVite,
+    translationKey: "icons.vite",
+  },
+  {
+    icon: IconPwa,
+    translationKey: "icons.pwa",
+  },
+  {
+    icon: IconNpm,
+    translationKey: "icons.npm",
   },
 ];

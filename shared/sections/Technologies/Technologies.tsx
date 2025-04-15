@@ -14,29 +14,22 @@ export const Technologies = () => {
       id={SectionIdEnum.TECHNOLOGIES}
     >
       <CommonTitle>{t("title")}</CommonTitle>
-      <SC.Container>
-        {TECHNOLOGIES_LIST.map(({ categoryTranslationKey, items }) => {
-          return (
-            <SC.ItemsContainer key={categoryTranslationKey}>
-              <SC.ItemsCategoryTitle>
-                {t(categoryTranslationKey)}
-              </SC.ItemsCategoryTitle>
-              <SC.ItemsList>
-                {items.map(({ icon, translationKey }) => {
-                  const techName = t(translationKey);
-
-                  return (
-                    <SC.Item key={translationKey}>
-                      <Image src={icon} alt={`icon-${techName}`} height={50} />
-                      <SC.ItemTechName>{techName}</SC.ItemTechName>
-                    </SC.Item>
-                  );
-                })}
-              </SC.ItemsList>
-            </SC.ItemsContainer>
-          );
-        })}
-      </SC.Container>
+      <SC.TechContainer>
+        {TECHNOLOGIES_LIST.map(({ icon, translationKey }) => (
+          <SC.TechItem key={translationKey} title={t(translationKey)}>
+            <SC.ItemFace />
+            <SC.ItemFace />
+            <SC.ItemFace>
+              <Image
+                className={Classname.TechImage}
+                src={icon}
+                alt={`icon-${translationKey}`}
+              />
+            </SC.ItemFace>
+            <SC.ItemFace />
+          </SC.TechItem>
+        ))}
+      </SC.TechContainer>
     </CommonSection>
   );
 };
