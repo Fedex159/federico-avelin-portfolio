@@ -6,6 +6,7 @@ export enum FormFieldsEnum {
 }
 
 export type FormMessageState = {
-  status: "success" | "error" | null;
+  invalidFields?: string[];
+  status: "error" | "success" | "warning" | null;
   timestamp: number;
 };

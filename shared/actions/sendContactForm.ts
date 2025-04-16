@@ -1,5 +1,6 @@
 "use server";
 
+import { validationSchemaContactForm } from "../schemas/validationSchemaContactForm";
 import { FormFieldsEnum, FormMessageState } from "../types/contactForm";
 
 const GoogleFormIds = {
@@ -27,6 +28,22 @@ export const sendContactForm = async (
   });
 
   try {
+    const validation = validationSchemaContactForm.safeParse(
+      Object.fromEntries(formData),
+    );
+    const invalidFields: string[] =
+      validation.error?.issues.map((issue) => issue.path[0].toString()) || [];
+    const invalidSetFields = new Set(invalidFields);
+    const isValid = validation.success;
+
+    if (!isValid) {
+      return {
+        status: "warning",
+        timestamp: Date.now(),
+        invalidFields: Array.from(invalidSetFields),
+      };
+    }
+
     await fetch(GOOGLE_FORM_URL, {
       method: "POST",
       body: newFormData,

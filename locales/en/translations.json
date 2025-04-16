@@ -108,6 +108,10 @@
       "error": {
         "title": "Error",
         "message": "There was an error sending your message. Please try again later."
+      },
+      "warning": {
+        "title": "Warning",
+        "message": "These fields {fields} are wrong. Please check them."
       }
     }
   },

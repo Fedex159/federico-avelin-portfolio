@@ -12,8 +12,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { INFO_LIST } from "./constants";
 import { Classname, SC } from "./Contact.styles";
-
-const MIN_TEXT_AREA_LENGTH = 30;
+import { FIELD_LENGTHS } from "@/shared/schemas/validationSchemaContactForm";
 
 export const Contact = () => {
   const t = useTranslations("contact");
@@ -42,20 +41,26 @@ export const Contact = () => {
         ))}
       </SC.InfoContainer>
       <ContactForm>
-        <ContactInput fieldName={FormFieldsEnum.FULLNAME} maxLength={40} />
+        <ContactInput
+          fieldName={FormFieldsEnum.FULLNAME}
+          maxLength={FIELD_LENGTHS[FormFieldsEnum.FULLNAME].max}
+        />
         <ContactInput
           fieldName={FormFieldsEnum.EMAIL}
-          maxLength={100}
+          maxLength={FIELD_LENGTHS[FormFieldsEnum.EMAIL].max}
           type="email"
         >
           <SC.EmailInvalidFormatMessage>
             {t("form.validation.email")}
           </SC.EmailInvalidFormatMessage>
         </ContactInput>
-        <ContactInput fieldName={FormFieldsEnum.SUBJECT} maxLength={80} />
+        <ContactInput
+          fieldName={FormFieldsEnum.SUBJECT}
+          maxLength={FIELD_LENGTHS[FormFieldsEnum.SUBJECT].max}
+        />
         <ContactTextArea
           fieldName={FormFieldsEnum.MESSAGE}
-          minLength={MIN_TEXT_AREA_LENGTH}
+          minLength={FIELD_LENGTHS[FormFieldsEnum.MESSAGE].min}
         />
       </ContactForm>
     </CommonSection>
