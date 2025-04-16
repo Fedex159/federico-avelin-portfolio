@@ -1,6 +1,7 @@
 # Portfolio Personal - [Federico Avelin] - Desarrollador Frontend
 
 [![Ver Demo Online](https://fede-avelin-dev.vercel.app/)] <br/>
+
 <img src="./imgs/home.webp" alt="Vista previa de la página de inicio del portfolio"/>
 
 ## Descripción
@@ -27,7 +28,7 @@ Para ver una lista completa de dependencias, consulta el archivo [package.json](
 
 1.  **Clonar el repositorio:**
     ```bash
-    git clone [https://github.com/Fedex159/federico-avelin-portfolio](https://github.com/Fedex159/federico-avelin-portfolio)
+    git clone https://github.com/Fedex159/federico-avelin-portfolio
     cd federico-avelin-portfolio
     ```
 2.  **Instalar dependencias:**
@@ -45,36 +46,43 @@ Para ver una lista completa de dependencias, consulta el archivo [package.json](
 ### Inicio
 
 <img src="./imgs/home.webp" alt="Sección Inicio"/>
+
 Página principal con un mensaje de bienvenida, una breve introducción sobre mí y mi foto de perfil. La barra de navegación superior permite acceder a todas las secciones e incluye un selector de idioma.
 
 ### Sobre Mí
 
 <img src="./imgs/about.webp" alt="Sección Sobre Mí"/>
+
 Contiene una descripción más detallada de mi perfil profesional y personal, así como un enlace para descargar mi CV actualizado.
 
 ### Experiencia
 
 <img src="./imgs/experience.webp" alt="Sección Experiencia"/>
+
 Detalla mi trayectoria laboral, incluyendo roles, empresas y responsabilidades relevantes.
 
 ### Tecnologías
 
 <img src="./imgs/technologies.webp" alt="Sección Tecnologías"/>
+
 Muestra las principales tecnologías, lenguajes y herramientas con las que trabajo habitualmente.
 
 ### Proyectos
 
 <img src="./imgs/projects.webp" alt="Sección Proyectos"/>
+
 Presenta una selección de mis proyectos personales y profesionales más destacados, con enlaces a sus repositorios de código y a las demos online.
 
 ### Contacto
 
 <img src="./imgs/contact.webp" alt="Sección Contacto"/>
+
 Incluye mis datos de contacto directo y un formulario funcional. Este formulario utiliza **Next.js Server Actions** y se integra con **Google Forms** para recibir los mensajes.
 
 ### Diseño Adaptable (Responsive)
 
 <img src="./imgs/responsive.webp" alt="Ejemplo de diseño responsive" style="width:300px"/>
+
 El sitio web está diseñado para ser completamente adaptable, asegurando una experiencia de usuario óptima en diferentes dispositivos y tamaños de pantalla (escritorio, tablet, móvil).
 
 ## Licencia
