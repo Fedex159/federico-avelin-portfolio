@@ -1,6 +1,6 @@
-# Portfolio Personal - [Federico Avelin] - Desarrollador Frontend
+# Portfolio Personal - Federico Avelin - Desarrollador Fullstack
 
-[![Ver Demo Online](https://fede-avelin-dev.vercel.app/)] <br/>
+[Ver Demo Online](https://fede-avelin-dev.vercel.app/) <br/>
 
 <img src="./imgs/home.webp" alt="Vista previa de la página de inicio del portfolio"/>
 
