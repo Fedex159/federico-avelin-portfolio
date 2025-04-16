@@ -1,0 +1,154 @@
+{
+  "header": {
+    "navlinks": {
+      "home": "Inicio",
+      "about": "Sobre Mi",
+      "experience": "Experiencia",
+      "technologies": "Tecnologías",
+      "projects": "Proyectos",
+      "contact": "Contacto"
+    }
+  },
+  "home": {
+    "title": "Federico Avelin",
+    "subtitle": "Desarrollador Web Fullstack",
+    "description": "Apasionado por construir software de calidad. Mi enfoque se centra en la arquitectura sólida, código limpio y la entrega de valor tangible a través de tecnología web moderna.",
+    "chat": "Conversemos"
+  },
+  "about": {
+    "title": "Sobre mi",
+    "description": "¡Hola! Soy Federico, un desarrollador web full-stack con {years} años de experiencia dedicados a construir experiencias web increíbles.\n\nMe encanta transformar ideas en realidad digital, prestando especial atención a la calidad del código y la usabilidad. Trabajo cómodamente con HTML, CSS, TypeScript, React, Next.js y Tailwind CSS, y disfruto mucho descubriendo y utilizando nuevas herramientas que mejoren mi trabajo.\n\nSi tienes un proyecto en mente, ¡me encantaría conversar y ver cómo puedo ayudarte a hacerlo realidad!.",
+    "downloadCv": "Descargar CV"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "items": {
+      "generator": {
+        "company": "Litebox",
+        "position": "@ Desarrollador Frontend",
+        "description": "Actualicé una utilidad interna para la generación de proyectos de Frontend y Backend, construida con Yeoman Generator. Se agregaron nuevos scripts y configuraciones que permiten la actualización automática de dependencias, utilizando las últimas configuraciones recomendadas de ESLint y simplificando significativamente su instalación al requerir únicamente el uso de npx. Un aporte clave fue la creación de la documentación técnica exhaustiva sobre el uso de la herramienta y los procedimientos para actualizar los scripts, la cual no estaba disponible anteriormente. El equipo brindó feedback positivo sobre la mejora y la claridad de la documentación, lo que facilitó la adopción y el uso de la utilidad.",
+        "time": "Abr. 2025"
+      },
+      "stellar": {
+        "company": "Litebox",
+        "position": "@ Desarrollador Frontend",
+        "description": "Implementé soporte offline en la aplicación para administradores de marinas, permitiendo el acceso a funcionalidades clave sin conexión a internet y mejorando la experiencia del usuario en situaciones de conectividad limitada. También configuré la aplicación para que pueda ser utilizada como PWA e instalada en dispositivos móviles gracias a PWABuilder. Para esto, se utilizaron tecnologías como Tanstack Query para la gestión de mutaciones offline, Service Workers para el almacenamiento en caché de recursos, y React y Next.js para el Frontend.",
+        "time": "Mar. 2024 - Abr. 2025"
+      },
+      "molo": {
+        "company": "Litebox",
+        "position": "@ Desarrollador Frontend",
+        "description": "Optimicé el rendimiento de la aplicación en secciones con formularios extensos (más de 50 campos) mediante el uso de Formik y validaciones personalizadas. A pesar de las limitaciones encontradas en Formik y las restricciones de tiempo que impidieron la migración a una librería más moderna como React Hook Form, lo que simplificó y optimizó la experiencia del usuario al completar formularios. Además, se optimizaron tablas infinitas implementando técnicas de virtualización y paginación con scroll para un mejor rendimiento. Se utilizaron Tanstack Virtual, Tanstack Query Y Tanstack Table.",
+        "time": "Jun. 2022 - Feb. 2024"
+      },
+      "sofia": {
+        "company": "Litebox",
+        "position": "@ Desarrollador Full Stack",
+        "description": "Desarrollé la integración de Algolia para la búsqueda de productos, mejorando significativamente la experiencia del usuario al permitir búsquedas rápidas y eficientes para una de las principales compañías de comercio electrónico de Bolivia. Para asegurar la sincronización en tiempo real del stock y la información de los productos en Algolia, se implementó una solución basada en la configuración de cron jobs. Adicionalmente, participé en el desarrollo de la funcionalidad de checkout como invitado, permitiendo a los usuarios completar sus compras de manera rápida y sencilla sin necesidad de crear una cuenta. Tecnologías utilizadas: Express, React, SQL, MySQL, Next.js, GraphQL.",
+        "time": "Mar. - May. 2022"
+      },
+      "liteboxWebsite": {
+        "company": "Litebox",
+        "position": "@ Desarrollador Frontend",
+        "description": "Desarrollé un carrusel complejo con Vue.js y CSS, enfrentando desafíos en animaciones y requerimientos de UI/UX. Tras analizar diversas librerías, se implementó Splide.js, personalizándolo significativamente con CSS para cumplir con las especificaciones de diseño y experiencia de usuario, logrando animaciones fluidas y un comportamiento personalizado.",
+        "time": "Feb. 2022"
+      }
+    }
+  },
+  "technologies": {
+    "title": "Tecnologías",
+    "icons": {
+      "css": "CSS",
+      "docker": "Docker",
+      "express": "Express",
+      "git": "Git",
+      "html": "HTML",
+      "javascript": "JavaScript",
+      "linux": "Linux",
+      "materialUI": "Material UI",
+      "nextjs": "Next.js",
+      "node": "Node.js",
+      "npm": "npm",
+      "postgresql": "PostgreSQL",
+      "postman": "Postman",
+      "pwa": "PWA",
+      "react": "React",
+      "reactHookForm": "React Hook Form",
+      "styledComponents": "Styled Components",
+      "tailwind": "Tailwind",
+      "tanstack": "Tanstack",
+      "typescript": "TypeScript",
+      "vite": "Vite"
+    }
+  },
+  "contact": {
+    "title": "Contáctame",
+    "info": {
+      "location": "Rosario, Santa Fe, Argentina",
+      "email": "fede.avelin.dev@gmail.com",
+      "github": "github.com/fedex159",
+      "linkedin": "linkedin.com/in/federico-avelin-dev/"
+    },
+    "form": {
+      "fullName": "Nombre Completo*",
+      "email": "Email*",
+      "subject": "Asunto*",
+      "message": "Mensaje*",
+      "submit": "Enviar",
+      "submitting": "Enviando...",
+      "validation": {
+        "required": "Requerido*",
+        "email": "Formato de email inválido",
+        "min": "Mínimo {min} caracteres"
+      },
+      "success": {
+        "title": "Éxito",
+        "message": "Tu mensaje ha sido enviado con éxito."
+      },
+      "error": {
+        "title": "Error",
+        "message": "Hubo un error al enviar tu mensaje. Por favor, intenta nuevamente más tarde."
+      },
+      "warning": {
+        "title": "Advertencia",
+        "message": "Estos campos {fields} están incorrectos. Por favor, revísalos."
+      }
+    }
+  },
+  "projects": {
+    "title": "Proyectos",
+    "links": {
+      "repository": "Repositorio",
+      "website": "Sitio Web"
+    },
+    "items": {
+      "webService": {
+        "title": "Web Service",
+        "description": "Es un e-commerce final de carrera para conectar oferta y demanda de servicios (plomería, clases, etc.). Lideré el equipo en la organización y desarrollo del proyecto.\n\nOfrece publicación de servicios, sistema de calificaciones, carrito de compras con pagos (MercadoPago/PayPal) y chat en tiempo real. Incluye paneles de usuario y administrador con estadísticas.\n\nDesarrollado con React, Express, PostgreSQL y Material UI, implementamos funcionalidades completas incluyendo autenticación. Es un proyecto de estudio totalmente funcional."
+      },
+      "videogames": {
+        "title": "Videogames",
+        "description": "Fue un proyecto individual de fin de carrera que consistió en el desarrollo de una aplicación web para la búsqueda y gestión de videojuegos.\n\nOfrece búsqueda y filtrado de videojuegos (con la API de RAWG), creación de nuevos videojuegos, paginación y página de detalle. También es responsive.\n\nDesarrollado con React, Express y PostgreSQL, este proyecto individual fue crucial para mi aprendizaje full-stack y la integración de APIs como la de RAWG."
+      },
+      "snake": {
+        "title": "Snake React",
+        "description": "Es una recreación del clásico videojuego de la Serpiente, desarrollada como un desafío personal para explorar las capacidades de React en la creación de lógica de juegos interactivos.\n\nOfrece tres niveles de dificultad, efectos de sonido y es totalmente responsive, funcionando en escritorio y dispositivos móviles con controles táctiles o botones.\n\nCon un diseño simple, el foco principal fue la desafiante implementación de la lógica del juego en React, resultando en una valiosa experiencia de aprendizaje."
+      },
+      "gifs": {
+        "title": "Gif Finder",
+        "description": "Es una aplicación web desarrollada como un ejercicio práctico para explorar la conexión con APIs externas, utilizando en este caso la API de Giphy para la búsqueda de GIFs.\n\nOfrece búsqueda de GIFs (con la API de Giphy), selector de color para el tema de la página, favoritos (localStorage) y carrusel navegable. Practiqué el manejo de estados y eventos en React.\n\nDesarrollado con React, Express, Javascript y CSS, este proyecto fue valioso para fortalecer mis habilidades en la interacción con APIs e implementación de componentes web interactivos."
+      },
+      "porfolio": {
+        "title": "Portfolio",
+        "description": "Mi portfolio personal. Hecho con React y Typescript. Encontraran mi información personal, proyectos y tecnologías."
+      },
+      "liteflix": {
+        "title": "Liteflix",
+        "description": "Es un catálogo de películas dinámico desarrollado como un desafío técnico para la empresa Litebox.\n\nEste proyecto, construido con React, CSS y Express, implementa funcionalidades como la carga de archivos y presenta un diseño responsive, adaptándose a diferentes dispositivos. Se siguió un diseño específico proporcionado en Figma y se integró la API de The Movie Database (TMDb) para la obtención de la información de las películas. Para la gestión y subida de imágenes se utilizó Cloudinary.\n\nEste desafío me permitió demostrar mis habilidades en el desarrollo frontend con React, la integración de APIs externas, el manejo de diseño a partir de especificaciones en Figma y la implementación de funcionalidades como la carga de archivos y la gestión de imágenes en la nube."
+      }
+    }
+  },
+  "footer": {
+    "copyright": "Federico Avelin ® {year}"
+  }
+}

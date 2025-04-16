@@ -1,60 +1,98 @@
-# Mi portfolio
+# Portfolio Personal - Federico Avelin - Desarrollador Fullstack
 
-<img src="./imgs/start.png" alt="start_screen"/>
+[Ver Demo Online](https://fede-avelin-dev.vercel.app/) <br/>
+
+<img src="./imgs/home.webp" alt="Vista previa de la página de inicio del portfolio"/>
 
 ## Descripción
 
-Este es mi portfolio personal. En el se encuentran mis proyectos, mi datos personales, descripcion mia, como asi tambien un formulario de contacto.
+Bienvenido/a al repositorio de mi portfolio personal. Este proyecto fue desarrollado con **React** y **Next.js** para mostrar mis habilidades, proyectos y experiencia como desarrollador fullstack. Aquí encontrarás mi información profesional, proyectos destacados y formas de contactarme.
 
-## Dependencias utilizadas
+## Tecnologías Principales
 
-- Node 12.21
-- NPM 7.20.3
-- React 17.0.2
-- Typescript 4.5.2
+- **Framework/Librería:** React 19, Next.js 15.2
+- **Lenguaje:** TypeScript 5
+- **Entorno:** Node.js (v22.x recomendado), npm (v10.x recomendado)
+- **Otras tecnologías:** Tailwind CSS, next-intl, zod, zustand.
 
-Para ver todas las dependencias, puede comprobar el archivo <a href="./package.json">package.json</a>
+Para ver una lista completa de dependencias, consulta el archivo [package.json](./package.json).
 
-## Instrucciones para utilizar el proyecto
+## Instalación y Ejecución Local
 
-- Clonar o forkear el repositorio
-- Npm install
-- Npm start
+**Prerrequisitos:**
 
-## Presentación y funcionalidades
+- Tener instalado [Node.js](https://nodejs.org/) (versión 22.x o superior recomendada)
+- Tener instalado [npm](https://www.npmjs.com/) (versión 10.x o superior recomendada)
 
-### Home
+**Pasos:**
 
-<img src="./imgs/start.png" alt="home"/>
+1.  **Clonar el repositorio:**
+    ```bash
+    git clone https://github.com/Fedex159/federico-avelin-portfolio
+    cd federico-avelin-portfolio
+    ```
+2.  **Instalar dependencias:**
+    ```bash
+    npm install
+    ```
+3.  **Ejecutar en modo desarrollo:**
+    ```bash
+    npm run dev
+    ```
+    Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
 
-Esta es la pantalla inicial de mi portfolio. En ella podrán encontrar un mensaje de bienvenida, junto a una breve descripción mía. También se encuentra mi foto de perfil. En el top, se encuentra la navbar, con acceso a todas las secciones de la web y un selector de idioma.
+## Secciones del Portfolio
 
-### About
+### Inicio
 
-<img src="./imgs/about.png" alt="about"/>
+<img src="./imgs/home.webp" alt="Sección Inicio"/>
 
-Sección about. En ella podrán encontrar una descripción más detallada de mi persona, como también un link para descargar mi curriculum personal.
+Página principal con un mensaje de bienvenida, una breve introducción sobre mí y mi foto de perfil. La barra de navegación superior permite acceder a todas las secciones e incluye un selector de idioma.
 
-### Technologies
+### Sobre Mí
 
-<img src="./imgs/technologies.png" alt="technologies"/>
+<img src="./imgs/about.webp" alt="Sección Sobre Mí"/>
 
-Sección technologies. En ella podrán encontrar las tecnologías que actualmente me destaco.
+Contiene una descripción más detallada de mi perfil profesional y personal, así como un enlace para descargar mi CV actualizado.
 
-### Projects
+### Experiencia
 
-<img src="./imgs/projects.png" alt="projects"/>
+<img src="./imgs/experience.webp" alt="Sección Experiencia"/>
 
-Sección projects. En ella podrán encontrar mis proyectos personales, tanto como el link al repositorio, como el link del deploy. Cuenta con una simple animación.
+Detalla mi trayectoria laboral, incluyendo roles, empresas y responsabilidades relevantes.
 
-### Contact
+### Tecnologías
 
-<img src="./imgs/contact.png" alt="contact"/>
+<img src="./imgs/technologies.webp" alt="Sección Tecnologías"/>
 
-Sección contact. En ella podrán encontrar mis datos personales de contacto, así como también un formulario de contacto, donde recibirán un mail, tanto ustedes como yo, para luego poder comunicarme con ustedes. Para el email se utilizó EmailJS.
+Muestra las principales tecnologías, lenguajes y herramientas con las que trabajo habitualmente.
 
-### Responsive
+### Proyectos
 
-<img src="./imgs/responsive.png" alt="responsive"/>
+<img src="./imgs/projects.webp" alt="Sección Proyectos"/>
 
-La web es full responsive para utilizar en la mayoria de dispositivos.
+Presenta una selección de mis proyectos personales y profesionales más destacados, con enlaces a sus repositorios de código y a las demos online.
+
+### Contacto
+
+<img src="./imgs/contact.webp" alt="Sección Contacto"/>
+
+Incluye mis datos de contacto directo y un formulario funcional. Este formulario utiliza **Next.js Server Actions** y se integra con **Google Forms** para recibir los mensajes.
+
+### Diseño Adaptable (Responsive)
+
+<img src="./imgs/responsive.webp" alt="Ejemplo de diseño responsive" style="width:300px"/>
+
+El sitio web está diseñado para ser completamente adaptable, asegurando una experiencia de usuario óptima en diferentes dispositivos y tamaños de pantalla (escritorio, tablet, móvil).
+
+## Licencia
+
+Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+
+## Contacto
+
+Puedes contactarme a través de:
+
+- El formulario en el [portfolio online](https://fede-avelin-dev.vercel.app/#contact).
+- LinkedIn: [Tu Perfil de LinkedIn](https://www.linkedin.com/in/federico-avelin-dev/)
+- Email: [fede.avelin.dev@gmail.com](mailto:fede.avelin.dev@gmail.com)

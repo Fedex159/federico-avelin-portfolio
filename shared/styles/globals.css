@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-main-background: #212121;
+  --color-secondary-background: #262626;
+  --color-header-background: #212121b3;
+  --color-primary: #f6f200;
+
+  /* Shadows */
+  --shadow-button: 0px 0px 5px 2px var(--color-primary);
+  --shadow-project-link: 0px 0px 5px 2px var(--color-white);
+  --shadow-about-image:
+    -5px -5px var(--color-main-background),
+    -13px -13px 0px -2px var(--color-primary);
+
+  /* Sizes */
+  --spacing-header-height: calc(var(--spacing) * 20);
+  --spacing-home-height: calc(100dvh - var(--spacing-header-height));
+
+  --max-content-width: calc((100% - var(--container-7xl)) / 2);
+  --min-padding-inline: calc(var(--spacing) * 2.5);
+  --padding-inline: clamp(
+    var(--min-padding-inline),
+    var(--max-content-width),
+    var(--max-content-width)
+  );
+
+  /* Animations */
+  --float-label: scale(0.75) translateX(-25%) translateY(-36px);
+}
