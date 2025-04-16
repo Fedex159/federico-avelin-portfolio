@@ -140,7 +140,7 @@
       },
       "liteflix": {
         "title": "Liteflix",
-        "description": "Es un catálogo de películas dinámico desarrollado como un desafío técnico para la empresa Litebox.\n\nEste proyecto, construido con React, CSS y Express, implementa funcionalidades como la carga de archivos y presenta un diseño responsive, adaptándose a diferentes dispositivos. Se siguió un diseño específico proporcionado en Figma y se integró la API de The Movie Database (TMDb) para la obtención de la información de las películas. Para la gestión y visualización de imágenes se utilizó Cloudinary.\n\nEste desafío me permitió demostrar mis habilidades en el desarrollo frontend con React, la integración de APIs externas, el manejo de diseño a partir de especificaciones en Figma y la implementación de funcionalidades como la carga de archivos y la gestión de imágenes en la nube."
+        "description": "Es un catálogo de películas dinámico desarrollado como un desafío técnico para la empresa Litebox.\n\nEste proyecto, construido con React, CSS y Express, implementa funcionalidades como la carga de archivos y presenta un diseño responsive, adaptándose a diferentes dispositivos. Se siguió un diseño específico proporcionado en Figma y se integró la API de The Movie Database (TMDb) para la obtención de la información de las películas. Para la gestión y subida de imágenes se utilizó Cloudinary.\n\nEste desafío me permitió demostrar mis habilidades en el desarrollo frontend con React, la integración de APIs externas, el manejo de diseño a partir de especificaciones en Figma y la implementación de funcionalidades como la carga de archivos y la gestión de imágenes en la nube."
       }
     }
   },
