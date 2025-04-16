@@ -6,7 +6,7 @@ const Header = tw.header`
   h-header-height
   sticky
   top-0
-  z-10
+  z-50
   mx-auto
   flex
   w-full
