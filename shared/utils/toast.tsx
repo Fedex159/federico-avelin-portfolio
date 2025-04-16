@@ -31,3 +31,16 @@ export const errorToast = ({ message, title }: ToastProps) => {
     },
   );
 };
+
+export const warningToast = ({ message, title }: ToastProps) => {
+  const toastId = toast.error(
+    () => <CommonToast message={message} title={title} toastId={toastId} />,
+    {
+      className: "bg-amber-400! text-white! min-w-2xs justify-start",
+      iconTheme: {
+        primary: "white",
+        secondary: "var(--color-amber-400)",
+      },
+    },
+  );
+};
