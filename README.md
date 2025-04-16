@@ -93,6 +93,6 @@ Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para má
 
 Puedes contactarme a través de:
 
-- El formulario en el [portfolio online](https://fede-avelin-dev.vercel.app/#contact).
-- LinkedIn: [Tu Perfil de LinkedIn](https://www.linkedin.com/in/federico-avelin-dev/)
+- Formulario de contacto en mi [portfolio](https://fede-avelin-dev.vercel.app/#contact).
+- LinkedIn: [federico-avelin-dev](https://www.linkedin.com/in/federico-avelin-dev/)
 - Email: [fede.avelin.dev@gmail.com](mailto:fede.avelin.dev@gmail.com)
