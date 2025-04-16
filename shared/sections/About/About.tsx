@@ -24,6 +24,7 @@ export const About = ({ locale }: Props) => {
   return (
     <CommonSection className={Classname.Section} id={SectionIdEnum.ABOUT}>
       <Image
+        unoptimized
         className={Classname.Image}
         src={ImageAbout}
         alt="developer-coding"
