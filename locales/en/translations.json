@@ -132,7 +132,7 @@
       },
       "gifs": {
         "title": "Gif Finder",
-        "description": "Gifs app. Some of the main functions are: GIF search, color selector, add to favorites, carousel."
+        "description": "It's a web application developed as a practical exercise to explore connecting with external APIs, in this case using the Giphy API for searching GIFs.\n\nIt offers GIF search (using the Giphy API), a color selector for the page theme, favorites (localStorage), and a navigable carousel. I practiced state and event handling in React.\n\nDeveloped with React, Express, Javascript, and CSS, this project was valuable for strengthening my skills in interacting with APIs and implementing interactive web components."
       },
       "porfolio": {
         "title": "Portfolio",
@@ -140,7 +140,7 @@
       },
       "liteflix": {
         "title": "Liteflix",
-        "description": "Dynamic movie catalog. Challenge done as challenged for litebox company. "
+        "description": "It's a dynamic movie catalog developed as a technical challenge for the company Litebox.\n\nThis project, built with React, CSS, and Express, implements functionalities such as file uploading and features a responsive design, adapting to different devices. A specific design provided in Figma was followed, and The Movie Database (TMDb) API was integrated to obtain movie information. Cloudinary was used for image management and uploading.\n\nThis challenge allowed me to demonstrate my skills in frontend development with React, the integration of external APIs, handling design based on Figma specifications, and implementing functionalities such as file uploading and image management in the cloud."
       }
     }
   },
