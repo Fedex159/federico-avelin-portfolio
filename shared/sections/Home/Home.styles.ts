@@ -2,6 +2,7 @@ import tw, { clsx } from "@/shared/utils/tailwind";
 
 const Section = clsx`
   [&&]:min-h-home-height
+  scroll-mt-header-height
   flex
   flex-col
   items-center
