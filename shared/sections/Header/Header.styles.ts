@@ -15,6 +15,12 @@ const Header = tw.header`
   text-white
 `;
 
+const Image = clsx`
+  w-header-height
+  h-header-height
+  object-contain
+`;
+
 const HamburgerMenu = tw.label`
   absolute
   top-1/2
@@ -95,4 +101,8 @@ export const SC = {
   Header,
   HamburgerMenu,
   Nav,
+};
+
+export const Classname = {
+  Image,
 };

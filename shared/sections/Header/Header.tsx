@@ -7,7 +7,7 @@ import {
 } from "@/shared/components";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { getNavLinkClassname, SC } from "./Header.styles";
+import { Classname, getNavLinkClassname, SC } from "./Header.styles";
 import { NAV_LINKS } from "./constants";
 
 export const Header = () => {
@@ -16,7 +16,7 @@ export const Header = () => {
   return (
     <SC.Header>
       <Link href={`#${NAV_LINKS[0].sectionId}`}>
-        <Image src={ImageLogo} alt="logo" width={87} />
+        <Image className={Classname.Image} src={ImageLogo} alt="logo" />
       </Link>
       <SC.HamburgerMenu htmlFor="hamburger-menu" />
       <HamburgerCheckbox id="hamburger-menu" aria-label="hamburger-menu" />
