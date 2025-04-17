@@ -1,6 +1,4 @@
 import { ImageResponse } from "next/og";
-import { readFile } from "node:fs/promises";
-import { join } from "node:path";
 import { CSSProperties } from "react";
 
 export const size = {
@@ -19,9 +17,8 @@ const ICON_STYLES: CSSProperties = {
 const LOCALHOST_URL = "http://localhost:3000";
 
 export default async function Image() {
-  const [montserratBold] = await Promise.all([
-    readFile(join(process.cwd(), "public/assets/fonts/Montserrat-Bold.ttf")),
-  ]);
+  const fontUrl = `${process.env.NEXT_PUBLIC_WEBSITE_URL || LOCALHOST_URL}/assets/fonts/Montserrat-Bold.ttf`;
+  const montserratBold = await fetch(fontUrl).then((res) => res.arrayBuffer());
 
   const profileImageUrl = `${process.env.NEXT_PUBLIC_WEBSITE_URL || LOCALHOST_URL}/assets/images/imageProfileGhibli.png`;
   const iconTypescriptUrl = `${process.env.NEXT_PUBLIC_WEBSITE_URL || LOCALHOST_URL}/assets/icons/iconTypescript.svg`;
