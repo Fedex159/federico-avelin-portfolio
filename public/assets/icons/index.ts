@@ -14,6 +14,7 @@ import IconLink from "./iconLink.svg";
 import IconLinkedin from "./iconLinkedin.svg";
 import IconLinux from "./iconLinux.svg";
 import IconLocation from "./iconLocation.svg";
+import IconLogo from "./iconLogo.svg";
 import IconMaterialUI from "./iconMaterialUI.svg";
 import IconNextjs from "./iconNextjs.svg";
 import IconNodeJs from "./iconNodeJs.svg";
@@ -46,6 +47,7 @@ export {
   IconLinkedin,
   IconLinux,
   IconLocation,
+  IconLogo,
   IconMaterialUI,
   IconNextjs,
   IconNodeJs,

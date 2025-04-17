@@ -1,5 +1,5 @@
 import { Link } from "@/i18n/routing";
-import { ImageLogo } from "@/public/assets";
+import { IconLogo } from "@/public/assets";
 import {
   HamburgerCheckbox,
   LanguageSelector,
@@ -16,7 +16,7 @@ export const Header = () => {
   return (
     <SC.Header>
       <Link href={`#${NAV_LINKS[0].sectionId}`}>
-        <Image className={Classname.Image} src={ImageLogo} alt="logo" />
+        <Image className={Classname.Image} src={IconLogo} alt="logo" />
       </Link>
       <SC.HamburgerMenu htmlFor="hamburger-menu" />
       <HamburgerCheckbox id="hamburger-menu" aria-label="hamburger-menu" />

@@ -16,8 +16,7 @@ const Header = tw.header`
 `;
 
 const Image = clsx`
-  w-header-height
-  h-header-height
+  w-10
   object-contain
 `;
 
