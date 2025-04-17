@@ -10,7 +10,7 @@ import { SC } from "./layout.styles";
 
 const montserrat = Montserrat({
   weight: ["400", "600", "700"],
-  style: ["normal", "italic"],
+  style: ["normal"],
   subsets: ["latin"],
   display: "swap",
   fallback: ["sans-serif"],
