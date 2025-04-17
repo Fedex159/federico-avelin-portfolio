@@ -19,6 +19,10 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "Federico Avelin | FullStack Web Developer",
   description: "Portfolio of Federico Avelin, a FullStack Web Developer",
+  openGraph: {
+    url: "https://fede-avelin-dev.vercel.app",
+    type: "website",
+  },
 };
 
 export function generateStaticParams() {
