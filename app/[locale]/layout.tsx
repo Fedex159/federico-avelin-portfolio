@@ -22,6 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     url: "https://fede-avelin-dev.vercel.app",
     type: "website",
+    siteName: "Portfolio of Federico Avelin",
   },
 };
 
