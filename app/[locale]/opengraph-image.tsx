@@ -17,7 +17,7 @@ const ICON_STYLES: CSSProperties = {
 const LOCALHOST_URL = "http://localhost:3000";
 
 export default async function Image() {
-  const fontUrl = `${process.env.NEXT_PUBLIC_WEBSITE_URL || LOCALHOST_URL}/assets/fonts/Montserrat-Bold.ttf`;
+  const fontUrl = `${process.env.NEXT_PUBLIC_WEBSITE_URL || LOCALHOST_URL}/assets/fonts/Montserrat-Bold.woff`;
   const montserratBold = await fetch(fontUrl).then((res) => res.arrayBuffer());
 
   const profileImageUrl = `${process.env.NEXT_PUBLIC_WEBSITE_URL || LOCALHOST_URL}/assets/images/imageProfileGhibli.png`;
@@ -30,6 +30,7 @@ export default async function Image() {
     (
       <div
         style={{
+          fontFamily: "Montserrat",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
