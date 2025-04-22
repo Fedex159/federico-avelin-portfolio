@@ -18,7 +18,8 @@
   "about": {
     "title": "About Me",
     "description": "Hi! I'm Federico, a full-stack web developer with {years} years of experience dedicated to building incredible web experiences.\n\nI love transforming ideas into digital reality, paying special attention to code quality and usability. I work comfortably with HTML, CSS, TypeScript, React, Next.js, and Tailwind CSS, and I really enjoy discovering and using new tools that improve my work.\n\nIf you have a project in mind, I'd love to chat and see how I can help you bring it to life!",
-    "downloadCv": "Download CV"
+    "downloadCv": "Download CV",
+    "includeImage": "Include profile image in the CV"
   },
   "experience": {
     "title": "Experience",

@@ -18,7 +18,8 @@
   "about": {
     "title": "Sobre mi",
     "description": "¡Hola! Soy Federico, un desarrollador web full-stack con {years} años de experiencia dedicados a construir experiencias web increíbles.\n\nMe encanta transformar ideas en realidad digital, prestando especial atención a la calidad del código y la usabilidad. Trabajo cómodamente con HTML, CSS, TypeScript, React, Next.js y Tailwind CSS, y disfruto mucho descubriendo y utilizando nuevas herramientas que mejoren mi trabajo.\n\nSi tienes un proyecto en mente, ¡me encantaría conversar y ver cómo puedo ayudarte a hacerlo realidad!.",
-    "downloadCv": "Descargar CV"
+    "downloadCv": "Descargar CV",
+    "includeImage": "Incluir imagen de perfil en el CV"
   },
   "experience": {
     "title": "Experiencia",

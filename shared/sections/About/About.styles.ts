@@ -37,20 +37,44 @@ const Description = tw.p`
   md:row-start-2
 `;
 
-const DownloadButton = clsx`
-  ${mixinButton}
+const DownloadButtonWrapper = tw.div`
+  flex
+  flex-col
+  items-start
+  gap-2.5
   md:col-start-2
   md:row-start-3
   md:self-start
 `;
 
+const ImageCheckboxLabel = tw.label`
+  peer/with-image
+  flex
+  cursor-pointer
+  items-center
+  gap-2
+`;
+
+const DownloadButtonWithoutImage = clsx`
+  ${mixinButton}
+  peer-has-checked/with-image:hidden
+`;
+
+const DownloadButtonWithImage = clsx`
+  ${mixinButton}
+  peer-has-not-checked/with-image:hidden
+`;
+
 export const SC = {
   Description,
+  DownloadButtonWrapper,
+  ImageCheckboxLabel,
 };
 
 export const Classname = {
   Section,
   Image,
   Title,
-  DownloadButton,
+  DownloadButtonWithImage,
+  DownloadButtonWithoutImage,
 };

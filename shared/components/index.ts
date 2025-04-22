@@ -7,6 +7,7 @@ export { ContactRequiredMessage } from "./ContactRequiredMessage/ContactRequired
 export { ContactTextArea } from "./ContactTextArea/ContactTextArea";
 export { FloatLabel } from "./FloatLabel/FloatLabel";
 export { HamburgerCheckbox } from "./HamburgerCheckbox/HamburgerCheckbox";
+export { IncludeImageCheckbox } from "./IncludeImageCheckbox/IncludeImageCheckbox";
 export { LanguageSelector } from "./LanguageSelector/LanguageSelector";
 export { ProgressBar } from "./ProgressBar/ProgressBar";
 export { ProjectLink } from "./ProjectLink/ProjectLink";
