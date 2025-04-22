@@ -20,7 +20,7 @@ export default async function Image() {
   const fontUrl = `${process.env.NEXT_PUBLIC_WEBSITE_URL || LOCALHOST_URL}/assets/fonts/Montserrat-Bold.woff`;
   const montserratBold = await fetch(fontUrl).then((res) => res.arrayBuffer());
 
-  const profileImageUrl = `${process.env.NEXT_PUBLIC_WEBSITE_URL || LOCALHOST_URL}/assets/images/imageProfileGhibli.png`;
+  const profileImageUrl = `${process.env.NEXT_PUBLIC_WEBSITE_URL || LOCALHOST_URL}/assets/images/imageProfileGhibli.jpg`;
   const iconTypescriptUrl = `${process.env.NEXT_PUBLIC_WEBSITE_URL || LOCALHOST_URL}/assets/icons/iconTypescript.svg`;
   const iconNextjsUrl = `${process.env.NEXT_PUBLIC_WEBSITE_URL || LOCALHOST_URL}/assets/icons/iconNextjs.svg`;
   const iconReactUrl = `${process.env.NEXT_PUBLIC_WEBSITE_URL || LOCALHOST_URL}/assets/icons/iconReact.svg`;
