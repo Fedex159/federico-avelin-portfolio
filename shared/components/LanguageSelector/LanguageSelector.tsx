@@ -12,7 +12,7 @@ export const LanguageSelector = () => {
   const handleClick = useCallback(
     ({ newLocale }: { newLocale: Locale }) => {
       startTransition(() => {
-        router.replace(`${pathname}${window.location.hash}` as never, {
+        router.replace(`${pathname}${window.location.hash}`, {
           locale: newLocale,
           scroll: false,
         });
