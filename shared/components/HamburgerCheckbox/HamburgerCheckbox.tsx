@@ -13,7 +13,7 @@ export const HamburgerCheckbox = (props: Props) => {
       onBlur={(e: FocusEvent<HTMLInputElement, Element>) => {
         setTimeout(() => {
           e.target.checked = false;
-        }, 100);
+        }, 300);
       }}
     />
   );
